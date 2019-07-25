@@ -1,0 +1,225 @@
+#!/bin/bash
+
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=bigapache
+
+# Import BigControlCenter base modules / Importa os módulos básicos do BigControlCenter
+# That's include jquery and materialize / Isso inclui o jquery e o materialize
+# http://materializecss.com/
+. /usr/share/bigbashview/bcc/shell/base.sh
+
+
+#Title/Description variables
+bcc_title="Desenvolvimento WEB"
+bcc_description=$"Instale servidores e outras facilidades"
+# To disable logo use: bcc_logo="no"
+bcc_logo="logo.png"
+
+# About variables
+# To disable about use: bcc_about="no"
+bcc_about="yes"
+bcc_about_license=$"GPL v2 or greater"
+bcc_about_by=$"Bruno Gonçalves"
+bcc_about_release_date=$"15/07/2017"
+bcc_about_url_code=$"https://github.com/biglinux/bigapache"
+bcc_about_url_project=$"https://www.biglinux.com.br"
+
+# Print header in screen
+bcc_header
+
+
+echo '<style>
+.row {
+    margin-bottom: 0px !important;
+}
+
+.card .card-content {
+    padding: 14px !important;
+}
+
+a {
+    line-height: 2;
+}
+
+.card .card-title {
+    font-size: 21px !important;
+    text-align: center;
+    color: darkblue;
+}
+
+</style>'
+
+
+###############
+# Start Content
+
+echo '<div class="row">
+    <div class="col s12 m6">
+      <div class="card #e3f2fd blue lighten-5">
+        <div class="card-content indigo-text text-darken-4">
+          <span class="card-title">' $"Servidores" '</span>'
+
+if [ -e "/usr/sbin/apache2" ]; then
+    echo '<a href="remove-apache-wait1.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Desinstala o Apache e o suporte à PHP, Python e Perl.">' $"Remover o servidor WEB Apache" '</label></a>'
+else
+    echo '<a href="install-apache-wait1.sh.htm" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Instala o Apache com suporte a PHP, Python e Perl.">' $"Instalar o servidor WEB Apache" '</label></a>'
+fi
+
+echo "<p>"
+
+if [ -e "/usr/sbin/mysqld" ]; then
+    echo '<a href="remove-mysql-wait1.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Desinstala o Mysql.">' $"Remover o servidor de banco de dados Mysql" '</label></a>'
+else
+    echo '<a href="install-mysql-wait1.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Instala o Mysql.">' $"Instalar o servidor de banco de dados Mysql" '</label></a>'
+fi
+
+
+echo '</div></div></div>'
+
+echo '<div class="row">
+    <div class="col s12 m6">
+      <div class="card #e3f2fd blue lighten-5">
+        <div class="card-content indigo-text text-darken-4">
+          <span class="card-title">' $"Gerenciar o Mysql" '</span>'
+
+if [ -e "/usr/sbin/mysqld" ] && [ -e "/usr/sbin/apache2" ] ; then
+
+    if [ -e "/usr/share/phpmyadmin/index.php" ]; then
+        echo '<a href="remove-phpmyadmin-wait1.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Para acessar o Phpmyadmin, utilize o menu do sistema, na categoria Desenvolvimento.">' $"Remover o Phpmyadmin" '</label></a>'
+    else
+        echo '<a href="install-phpmyadmin-wait1.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Instala o Phpmyadmin.">' $"Instalar o gerenciador de banco de dados Phpmyadmin" '</label></a>'
+    fi
+
+else
+
+    echo $"Para instalar o Phpmyadmin, instale primeiro o Apache e o Mysql."
+
+fi
+
+if [ -e "/usr/sbin/mysqld" ]; then
+echo "<p>"
+    echo '<a href="mysql-admin-password.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Nesse sistema utilizamos dois administradores no Mysql, o root, utilizado apenas por linha de comando e o admin, que pode ser utilizado, por exemplo, no Phpmyadmin.">' $"Alterar a senha do usuário admin do Mysql" '</label></a>'
+fi
+
+echo '</div></div></div></div></div>'
+
+
+if [ -e "/usr/sbin/mysqld" ] || [ -e "/usr/sbin/apache2" ] ; then
+
+    echo '<div class="row">
+    <div class="col s12 m6">
+      <div class="card #e3f2fd blue lighten-5">
+        <div class="card-content indigo-text text-darken-4">
+          <span class="card-title">' $"Serviços" '</span>'
+          
+    if [ -e "/usr/sbin/apache2" ] ; then
+        if [ "$(ps -e | grep /usr/sbin/apach)" != "" ]; then
+            echo '<a href="systemd-manage.sh.htm?stop_apache=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
+            echo "O Apache está funcionando no momento, utilize esta opção para fechar o servidor."
+            echo '">' $"Parar o Apache" '</label></a>'
+        else
+            echo '<a href="systemd-manage.sh.htm?start_apache=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
+            echo "O Apache não está funcionando no momento, utilize esta opção para iniciar o servidor."
+            echo '">' $"Iniciar o Apache" '</label></a>'
+        fi
+
+        echo "<p>"
+
+        if [ -e "/etc/systemd/system/multi-user.target.wants/apache2.service" ]; then
+            echo '<a href="systemd-manage.sh.htm?disable_apache=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
+            echo "O Apache está sendo iniciado automaticamente ao ligar o computador."
+            echo '">' $"Parar de iniciar o Apache ao ligar o computador" '</label></a>'
+        else
+            echo '<a href="systemd-manage.sh.htm?enable_apache=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
+            echo "O Apache não está sendo iniciado automaticamente ao ligar o computador."
+            echo '">' $"Marcar o Apache para iniciar ao ligar o computador" '</label></a>'
+        fi
+
+        echo "<p>"
+    fi
+    
+    if [ -e "/usr/sbin/mysqld" ]; then
+        if [ "$(ps -e | grep mysqld)" != "" ]; then
+            echo '<a href="systemd-manage.sh.htm?stop_mysql=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
+            echo "O Mysql está funcionando no momento, utilize esta opção para fechar o servidor."
+            echo '">' $"Parar o Mysql" '</label></a>'
+        else
+            echo '<a href="systemd-manage.sh.htm?start_mysql=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
+            echo "O Mysql não está funcionando no momento, utilize esta opção para iniciar o servidor."
+            echo '">' $"Iniciar o Mysql" '</label></a>'
+        fi
+    
+        echo "<p>"
+   
+        if [ -e "/etc/systemd/system/multi-user.target.wants/mysql.service" ]; then
+            echo '<a href="systemd-manage.sh.htm?disable_mysql=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
+            echo "O Mysql está sendo iniciado automaticamente ao ligar o computador."
+            echo '">' $"Parar de iniciar o Mysql ao ligar o computador" '</label></a>'
+        else
+            echo '<a href="systemd-manage.sh.htm?enable_mysql=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
+            echo "O Mysql não está sendo iniciado automaticamente ao ligar o computador."
+            echo '">' $"Marcar o Mysql para iniciar ao ligar o computador" '</label></a>'
+        fi
+    fi
+
+fi
+
+    
+echo '</div></div></div>'
+
+if [ -e "/usr/sbin/apache2" ]; then
+    echo '<div class="row">
+        <div class="col s12 m6">
+        <div class="card #e3f2fd blue lighten-5">
+            <div class="card-content indigo-text text-darken-4">
+            <span class="card-title">' $"Configurações do Apache" '</span>'
+
+    echo '<a href="apache-permission-user.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
+    echo "Configura as permissões da pasta padrão do Apache, /var/www/html, para o usuário atual: $USER. Ao fazer isto, basta acessar a pasta /var/www/html e adicionar ou modificar os arquivos com o seu usuário, sem problemas de falta de permissão."
+    echo '">' $"Alterar as permissões dos arquivos para o usuário atual." '</label></a>'
+
+    echo "<p>"
+
+    echo '<a href="apache-permission-default.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
+    echo "Configura as permissões da pasta padrão do Apache, /var/www/html, para o usuário padrão: www-data"
+    echo '">' $"Alterar as permissões dos arquivos para o usuário padrão." '</label></a>'
+
+    echo "<p>"
+
+    echo '<a href="apache-folder.run" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
+    echo "Esta é a pasta padrão do Apache, aonde devem ficar os arquivos do seu site."
+    echo '">' $"Abrir a pasta /var/www/html" '</label></a>'
+
+    echo "<p>"
+
+    echo '<a href="apache-config.run" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
+    echo "Pasta que contêm os arquivos de configuração do Apache."
+    echo '">' $"Abrir a pasta de configurações /etc/apache2" '</label></a>'
+    
+    echo '</div></div></div></div></div>'
+
+
+    
+fi
+
+
+
+
+
+###################
+# Close content div
+echo '</div>'
+
+##############
+# Start footer
+echo '<div id="bcc_footer">'
+      echo '<div id="bcc_footer_right">'
+        echo '<a href="/usr/share/bigbashview/close.sh" class="waves-effect waves-light btn blue-grey lighten-1"><img src=cancel.png>'$"Fechar"'</a>'
+      echo '</div>'
+echo '</div>'
+echo '</form>'
+
+
+#########
+# The end
+echo '</body>'

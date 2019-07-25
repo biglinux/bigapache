@@ -1,0 +1,10 @@
+[Desktop Entry]
+Categories=System;
+Exec=bigapache
+Icon=network-server
+Name[pt_BR]=Gerenciar servidor WEB e Mysql
+Name=Web server and Mysql manager
+StartupNotify=true
+Terminal=false
+Type=Application
+StartupWMClass=bigapache

@@ -1,0 +1,89 @@
+#!/bin/bash
+
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=bigapache
+
+# Import BigControlCenter base modules / Importa os módulos básicos do BigControlCenter
+# That's include jquery and materialize / Isso inclui o jquery e o materialize
+# http://materializecss.com/
+. /usr/share/bigbashview/bcc/shell/base.sh
+
+
+#Title/Description variables
+bcc_title="Desenvolvimento WEB"
+bcc_description=$"Instale servidores e outras facilidades"
+# To disable logo use: bcc_logo="no"
+bcc_logo="logo.png"
+
+# About variables
+# To disable about use: bcc_about="no"
+bcc_about="yes"
+bcc_about_license=$"GPL v2 or greater"
+bcc_about_by=$"Bruno Gonçalves"
+bcc_about_release_date=$"15/07/2017"
+bcc_about_url_code=$"https://github.com/biglinux/bigapache"
+bcc_about_url_project=$"https://www.biglinux.com.br"
+
+# Print header in screen
+bcc_header
+
+
+###############
+# Start Content
+
+
+if [ "$p_enable_apache" = "1" ]; then
+    bigsudo /usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh enable-apache
+fi
+
+if [ "$p_disable_apache" = "1" ]; then
+    bigsudo /usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh disable-apache
+fi
+
+if [ "$p_start_apache" = "1" ]; then
+    bigsudo /usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh start-apache
+fi
+
+if [ "$p_stop_apache" = "1" ]; then
+    bigsudo /usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh stop-apache
+fi
+
+
+
+if [ "$p_enable_mysql" = "1" ]; then
+    bigsudo /usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh enable-mysql
+fi
+
+if [ "$p_disable_mysql" = "1" ]; then
+    bigsudo /usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh disable-mysql
+fi
+
+if [ "$p_start_mysql" = "1" ]; then
+    bigsudo /usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh start-mysql
+fi
+
+if [ "$p_stop_mysql" = "1" ]; then
+    bigsudo /usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh stop-mysql
+fi
+
+
+# Start javascript
+echo '<script type="text/javascript">
+function sleep (time) {
+  return new Promise((resolve) => setTimeout(resolve, time));
+}'
+
+# Fix to interface don't crash
+echo 'sleep(100).then(() => {'
+
+# Redirect to another script
+echo "window.location.href = \"index.sh.htm\""
+
+# Close javascript
+echo '});'
+echo '</script>'
+
+
+#########
+# The end
+echo '</body>'
