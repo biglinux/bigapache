@@ -202,7 +202,47 @@ if [ -e "/usr/sbin/apache2" ]; then
     
 fi
 
+echo '<div class="row">
+    <div class="col s12 ">
+      <div class="card #e3f2fd blue lighten-5">
+        <div class="card-content indigo-text text-darken-4">
+          <span class="card-title"></span>'
+          echo '<font color="000">'$"Instalar ou remover editores: " '</font>'
 
+if [ -e "/usr/bin/atom" ]; then
+    echo '<a href="install-apps-wait.sh.htm?remove_atom=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Desinstala o editor Atom.">' $"Atom" '</label></a>'
+else
+    echo '<a href="install-apps-wait.sh.htm?install_atom=1" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Instala o editor Atom.">' $"Atom" '</label></a>'
+fi
+
+echo " - "
+
+if [ -e "/usr/share/codium/codium" ]; then
+    echo '<a href="install-apps-wait.sh.htm?remove_codium=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Desinstala o editor VSCodium.">' $"VSCodium" '</label></a>'
+else
+    echo '<a href="install-apps-wait.sh.htm?install_codium=1" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Instala o editor VSCodium.">' $"VSCodium" '</label></a>'
+
+fi
+
+echo " - "
+
+
+if [ -e "/usr/share/code/code" ]; then
+    echo '<a href="install-apps-wait.sh.htm?remove_code=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Desinstala o editor Visual Studio Code.">' $"VSCode" '</label></a>'
+else
+    echo '<a href="install-apps-wait.sh.htm?install_code=1" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Instala o editor Visual Studio Code.">' $"VSCode" '</label></a>'
+fi
+
+echo " - "
+
+
+if [ -e "/opt/sublime_text/sublime_text" ]; then
+    echo '<a href="install-apps-wait.sh.htm?remove_sublime=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Desinstala o editor Sublime Text. (Este programa não é software livre)">' $"Sublime Text" '</label></a>'
+else
+    echo '<a href="install-apps-wait.sh.htm?install_sublime=1" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Instala o editor Sublime Text. (Este programa não é software livre)">' $"Sublime Text" '</label></a>'
+fi
+
+echo '</div></div></div></div>'
 
 
 
