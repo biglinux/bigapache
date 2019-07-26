@@ -20,6 +20,21 @@ if [ "$1" = "remove-atom" ]; then
 fi
 
 
+if [ "$1" = "install-bluefish" ]; then
+    synaptic --parent-window-id "$windowID" --non-interactive -o Synaptic::closeZvt=true --hide-main-window --update-at-startup
+    
+    echo "bluefish" | sed 's/$/\ /;s/--install //' | sed 's/\ /\ install\r\n/g' > /tmp/bigsynaptic$$
+
+    synaptic --parent-window-id "$windowID" --set-selections --non-interactive -o Synaptic::closeZvt=true --hide-main-window < /tmp/bigsynaptic$$
+fi
+
+
+if [ "$1" = "remove-bluefish" ]; then
+    echo "bluefish" | sed 's/$/\ /;s/--remove //' | sed 's/\ /\ uninstall\r\n/g' > /tmp/bigsynaptic$$
+    synaptic --parent-window-id "$windowID" --set-selections --non-interactive -o Synaptic::closeZvt=true --hide-main-window < /tmp/bigsynaptic$$
+fi
+
+
 if [ "$1" = "install-codium" ]; then
     wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | apt-key add -
 

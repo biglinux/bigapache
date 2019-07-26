@@ -208,11 +208,19 @@ echo '<div class="row">
         <div class="card-content indigo-text text-darken-4">
           <span class="card-title"></span>'
           echo '<font color="000">'$"Instalar ou remover editores: " '</font>'
-
+          
 if [ -e "/usr/bin/atom" ]; then
     echo '<a href="install-apps-wait.sh.htm?remove_atom=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Desinstala o editor Atom.">' $"Atom" '</label></a>'
 else
     echo '<a href="install-apps-wait.sh.htm?install_atom=1" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Instala o editor Atom.">' $"Atom" '</label></a>'
+fi
+
+echo " - "
+
+if [ -e "/usr/bin/bluefish" ]; then
+    echo '<a href="install-apps-wait.sh.htm?remove_bluefish=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Desinstala o editor Bluefish.">' $"Bluefish" '</label></a>'
+else
+    echo '<a href="install-apps-wait.sh.htm?install_bluefish=1" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Instala o editor Bluefish.">' $"Bluefish" '</label></a>'
 fi
 
 echo " - "

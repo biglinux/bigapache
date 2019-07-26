@@ -40,6 +40,14 @@ if [ "$p_remove_atom" = "1" ]; then
     bigsudo /usr/share/bigbashview/bcc/apps/apache/apps-manage.sh remove-atom
 fi
 
+if [ "$p_install_bluefish" = "1" ]; then
+    bigsudo /usr/share/bigbashview/bcc/apps/apache/apps-manage.sh install-bluefish
+fi
+
+if [ "$p_remove_bluefish" = "1" ]; then
+    bigsudo /usr/share/bigbashview/bcc/apps/apache/apps-manage.sh remove-bluefish
+fi
+
 if [ "$p_install_codium" = "1" ]; then
     bigsudo /usr/share/bigbashview/bcc/apps/apache/apps-manage.sh install-codium
 fi
