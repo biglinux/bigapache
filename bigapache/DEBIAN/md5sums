@@ -1,5 +1,5 @@
 d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
-303acc6182554aeed7e01705b2c8f7d0  DEBIAN/control
+b57381d445bf6adf6b3fd83382bf92a3  DEBIAN/control
 3ba76a6d012bb00d01c913998eeba97f  usr/share/bigbashview/bcc/apps/apache/apache-config.run
 3d1bd74756b268e6ec053843f2f8ad6a  usr/share/bigbashview/bcc/apps/apache/apache-folder.run
 cc184a690f07823d7a738e4a5dc0cdc4  usr/share/bigbashview/bcc/apps/apache/apache-permission-default.sh
@@ -13,7 +13,7 @@ ff3c3d3d5d1c7c0f33006292874eba4a  usr/share/bigbashview/bcc/apps/apache/finish-a
 5140f0103bb979432dd9e973d86626bb  usr/share/bigbashview/bcc/apps/apache/finish-mysql.sh.htm
 2397abe44ac7f5008c6bfa1c0d0a29a5  usr/share/bigbashview/bcc/apps/apache/finish-phpmyadmin.sh.htm
 24f94afbf5da38ec6d3c0b79049dcf4d  usr/share/bigbashview/bcc/apps/apache/finish.sh.htm
-ebd89df546af159ecb73b0c5e6d197fd  usr/share/bigbashview/bcc/apps/apache/index.sh.htm
+71d3b612e5b0776896ceeb738322c5a3  usr/share/bigbashview/bcc/apps/apache/index.sh.htm
 30ea727896e107456de3409d42beddd8  usr/share/bigbashview/bcc/apps/apache/install-apache-wait1.sh.htm
 28c6a82aa22dcecc5b30a78724eaf69e  usr/share/bigbashview/bcc/apps/apache/install-apache-wait2.sh.htm
 09e959d2b9dca85a30fa0418df24af69  usr/share/bigbashview/bcc/apps/apache/install-apache.sh
@@ -29,6 +29,7 @@ dc5747b2ced86f6ec21373f0930fb5c4  usr/share/bigbashview/bcc/apps/apache/logo.png
 f4a5852fb9b8cae2d89d6903d48909a2  usr/share/bigbashview/bcc/apps/apache/mysql-admin-password.sh.htm
 21ce875aea67401ebbabc6f14acc191e  usr/share/bigbashview/bcc/apps/apache/mysql-admin-password2.sh.htm
 c30cd977ccb0d1eca5aeb970fef5b003  usr/share/bigbashview/bcc/apps/apache/ok.png
+45badf0b1ab2a69aff8894375e87ae4a  usr/share/bigbashview/bcc/apps/apache/open-phpmyadmin.run
 3f6b4818ee25adba2eb332e6d6d562a0  usr/share/bigbashview/bcc/apps/apache/remove-apache-wait1.sh.htm
 844b90f273be6905b3c0e32510b03c0c  usr/share/bigbashview/bcc/apps/apache/remove-apache-wait2.sh.htm
 4a1373c063e88748af95fe3c631322dc  usr/share/bigbashview/bcc/apps/apache/remove-apache.sh
@@ -43,3 +44,4 @@ c42a7bf45b1b8c84f9c1e7d04ffedcc3  usr/share/bigbashview/bcc/apps/apache/remove-m
 f49e71c2244b97f89b33f20c44afb04c  usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh.htm
 0eeb65e1d4a66076aca22a64b8c5ceff  usr/share/applications/bigapache.desktop
 3cf341d982780535d57781108b0dfa3a  usr/bin/bigapache
+dfa49fe1db9b2654f0ed0a3263872639  usr/bin/pzp
