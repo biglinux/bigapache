@@ -1,7 +1,7 @@
 [Desktop Entry]
 Categories=System;
 Exec=bigapache
-Icon=network-server
+Icon=/usr/share/bigbashview/bcc/apps/apache/bigapache.png
 Name[pt_BR]=Gerenciar servidor WEB e Mysql
 Name=Web server and Mysql manager
 StartupNotify=true

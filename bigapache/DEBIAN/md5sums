@@ -1,5 +1,5 @@
 d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
-eb3141fb0b0b2e1a2e7f14d5f0c087fa  DEBIAN/control
+7eae444f666e48d9f1d4352b09af88b5  DEBIAN/control
 3ba76a6d012bb00d01c913998eeba97f  usr/share/bigbashview/bcc/apps/apache/apache-config.run
 3d1bd74756b268e6ec053843f2f8ad6a  usr/share/bigbashview/bcc/apps/apache/apache-folder.run
 cc184a690f07823d7a738e4a5dc0cdc4  usr/share/bigbashview/bcc/apps/apache/apache-permission-default.sh
@@ -13,7 +13,7 @@ ff3c3d3d5d1c7c0f33006292874eba4a  usr/share/bigbashview/bcc/apps/apache/finish-a
 5140f0103bb979432dd9e973d86626bb  usr/share/bigbashview/bcc/apps/apache/finish-mysql.sh.htm
 2397abe44ac7f5008c6bfa1c0d0a29a5  usr/share/bigbashview/bcc/apps/apache/finish-phpmyadmin.sh.htm
 24f94afbf5da38ec6d3c0b79049dcf4d  usr/share/bigbashview/bcc/apps/apache/finish.sh.htm
-71d3b612e5b0776896ceeb738322c5a3  usr/share/bigbashview/bcc/apps/apache/index.sh.htm
+0c9f34f7ecaa6ce6e531623269c36ea5  usr/share/bigbashview/bcc/apps/apache/index.sh.htm
 30ea727896e107456de3409d42beddd8  usr/share/bigbashview/bcc/apps/apache/install-apache-wait1.sh.htm
 28c6a82aa22dcecc5b30a78724eaf69e  usr/share/bigbashview/bcc/apps/apache/install-apache-wait2.sh.htm
 09e959d2b9dca85a30fa0418df24af69  usr/share/bigbashview/bcc/apps/apache/install-apache.sh
@@ -24,7 +24,6 @@ d5a08afa0fa2416f36fc29a175b06008  usr/share/bigbashview/bcc/apps/apache/install-
 bb778e76404aa774ce04ec74ed1c5f36  usr/share/bigbashview/bcc/apps/apache/install-phpmyadmin-wait1.sh.htm
 cd3ab3826b77267286ae3247adcb6ade  usr/share/bigbashview/bcc/apps/apache/install-phpmyadmin-wait2.sh.htm
 92f0f7c277c1f1374248d3bbfe27158c  usr/share/bigbashview/bcc/apps/apache/install-phpmyadmin.sh
-dc5747b2ced86f6ec21373f0930fb5c4  usr/share/bigbashview/bcc/apps/apache/logo.png
 44358f0282f34c0a1f949d28be28071f  usr/share/bigbashview/bcc/apps/apache/mysql-admin-password.sh
 f4a5852fb9b8cae2d89d6903d48909a2  usr/share/bigbashview/bcc/apps/apache/mysql-admin-password.sh.htm
 21ce875aea67401ebbabc6f14acc191e  usr/share/bigbashview/bcc/apps/apache/mysql-admin-password2.sh.htm
@@ -42,6 +41,8 @@ c42a7bf45b1b8c84f9c1e7d04ffedcc3  usr/share/bigbashview/bcc/apps/apache/remove-m
 971b48e585e224e792d1b0d8638b485f  usr/share/bigbashview/bcc/apps/apache/run-terminal.sh
 82327e036e3ab1aa4996188655dd0834  usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh
 f49e71c2244b97f89b33f20c44afb04c  usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh.htm
-0eeb65e1d4a66076aca22a64b8c5ceff  usr/share/applications/bigapache.desktop
+0d1e04ca76468d0ef62dfa1ff1403592  usr/share/bigbashview/bcc/apps/apache/logo.png
+0d1e04ca76468d0ef62dfa1ff1403592  usr/share/bigbashview/bcc/apps/apache/bigapache.png
+22f1c928e7d3e06b5f45af700b481c14  usr/share/applications/bigapache.desktop
 3cf341d982780535d57781108b0dfa3a  usr/bin/bigapache
 564b32968778f91f8610108520bd3908  usr/bin/pzp
