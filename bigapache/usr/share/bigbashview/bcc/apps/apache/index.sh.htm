@@ -10,7 +10,7 @@ export TEXTDOMAIN=bigapache
 
 
 #Title/Description variables
-bcc_title="Desenvolvimento WEB"
+bcc_title=$"Desenvolvimento WEB"
 bcc_description=$"Instale servidores e outras facilidades"
 # To disable logo use: bcc_logo="no"
 bcc_logo="logo.png"
@@ -72,26 +72,26 @@ echo '<li><div class="collapsible-header">' $"Servidor WEB Apache"
 if [ -e "/usr/sbin/apache2" ]; then
   echo '<span class="badge">' $"Instalado" '</span>'
   echo '</div><div class="collapsible-body"><p>'
-  echo '<a href="remove-apache-wait1.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Desinstala o Apache e o suporte à PHP, Python e Perl.">' $"Remover o servidor WEB Apache" '</label></a><p>'
+  echo '<a href="remove-apache-wait1.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Desinstala o Apache e o suporte à PHP, Python e Perl." '">' $"Remover o servidor WEB Apache" '</label></a><p>'
 
 
   if [ "$(ps -e | grep /usr/sbin/apach)" != "" ]; then
     echo '<a href="systemd-manage.sh.htm?stop_apache=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
-    echo "O Apache está funcionando no momento, utilize esta opção para fechar o servidor."
+    echo $"O Apache está funcionando no momento, utilize esta opção para fechar o servidor."
     echo '">' $"Parar o Apache" '</label></a><p>'
   else
     echo '<a href="systemd-manage.sh.htm?start_apache=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
-    echo "O Apache não está funcionando no momento, utilize esta opção para iniciar o servidor."
+    echo $"O Apache não está funcionando no momento, utilize esta opção para iniciar o servidor."
     echo '">' $"Iniciar o Apache" '</label></a><p>'
   fi
 
   if [ -e "/etc/systemd/system/multi-user.target.wants/apache2.service" ]; then
     echo '<a href="systemd-manage.sh.htm?disable_apache=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
-    echo "O Apache está sendo iniciado automaticamente ao ligar o computador."
+    echo $"O Apache está sendo iniciado automaticamente ao ligar o computador."
     echo '">' $"Parar de iniciar o Apache ao ligar o computador" '</label></a><p>'
   else
     echo '<a href="systemd-manage.sh.htm?enable_apache=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
-    echo "O Apache não está sendo iniciado automaticamente ao ligar o computador."
+    echo $"O Apache não está sendo iniciado automaticamente ao ligar o computador."
     echo '">' $"Marcar o Apache para iniciar ao ligar o computador" '</label></a><p>'
   fi
 
@@ -99,7 +99,7 @@ if [ -e "/usr/sbin/apache2" ]; then
 else
   echo '<span class="badge">' $"Não está instalado" '</span>'
   echo '</div><div class="collapsible-body"><p>'
-  echo '<a href="install-apache-wait1.sh.htm" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Instala o Apache com suporte a PHP, Python e Perl.">' $"Instalar o servidor WEB Apache" '</label></a>'
+  echo '<a href="install-apache-wait1.sh.htm" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Instala o Apache com suporte a PHP, Python e Perl." '">' $"Instalar o servidor WEB Apache" '</label></a>'
 fi
 echo '</p></div></li>'
 
@@ -108,33 +108,33 @@ echo '<li><div class="collapsible-header">' $"Servidor Mysql"
 if [ -e "/usr/sbin/mysqld" ]; then
   echo '<span class="badge">' $"Instalado" '</span>'
   echo '</div><div class="collapsible-body"><p>'
-  echo '<a href="remove-mysql-wait1.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Desinstala o Mysql.">' $"Remover o servidor de banco de dados Mysql" '</label></a><p>'
+  echo '<a href="remove-mysql-wait1.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Desinstala o Mysql." '">' $"Remover o servidor de banco de dados Mysql" '</label></a><p>'
 
 
   if [ "$(ps -e | grep mysqld)" != "" ]; then
     echo '<a href="systemd-manage.sh.htm?stop_mysql=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
-    echo "O Mysql está funcionando no momento, utilize esta opção para fechar o servidor."
+    echo $"O Mysql está funcionando no momento, utilize esta opção para fechar o servidor."
     echo '">' $"Parar o Mysql" '</label></a><p>'
   else
     echo '<a href="systemd-manage.sh.htm?start_mysql=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
-    echo "O Mysql não está funcionando no momento, utilize esta opção para iniciar o servidor."
+    echo $"O Mysql não está funcionando no momento, utilize esta opção para iniciar o servidor."
     echo '">' $"Iniciar o Mysql" '</label></a><p>'
   fi
 
   if [ -e "/etc/systemd/system/multi-user.target.wants/mysql.service" ]; then
     echo '<a href="systemd-manage.sh.htm?disable_mysql=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
-    echo "O Mysql está sendo iniciado automaticamente ao ligar o computador."
+    echo $"O Mysql está sendo iniciado automaticamente ao ligar o computador."
     echo '">' $"Parar de iniciar o Mysql ao ligar o computador" '</label></a><p>'
   else
     echo '<a href="systemd-manage.sh.htm?enable_mysql=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
-    echo "O Mysql não está sendo iniciado automaticamente ao ligar o computador."
+    echo $"O Mysql não está sendo iniciado automaticamente ao ligar o computador."
     echo '">' $"Marcar o Mysql para iniciar ao ligar o computador" '</label></a><p>'
   fi
 
 else
   echo '<span class="badge">' $"Não está instalado" '</span>'
   echo '</div><div class="collapsible-body"><p>'
-  echo '<a href="install-mysql-wait1.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Instala o Mysql.">' $"Instalar o servidor de banco de dados Mysql" '</label></a><p>'
+  echo '<a href="install-mysql-wait1.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Instala o Mysql." '">' $"Instalar o servidor de banco de dados Mysql" '</label></a><p>'
 fi
 
 echo '</p></div></li>'
@@ -148,25 +148,25 @@ if [ -e "/usr/sbin/apache2" ]; then
   echo '</div><div class="collapsible-body"><p>'
 
   echo '<a href="apache-permission-user.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
-  echo "Configura as permissões da pasta padrão do Apache, /var/www/html, para o usuário atual: $USER. Ao fazer isto, basta acessar a pasta /var/www/html e adicionar ou modificar os arquivos com o seu usuário, sem problemas de falta de permissão."
+  echo $"Configura as permissões da pasta padrão do Apache, /var/www/html, para o usuário atual: $USER. Ao fazer isto, basta acessar a pasta /var/www/html e adicionar ou modificar os arquivos com o seu usuário, sem problemas de falta de permissão."
   echo '">' $"Alterar as permissões dos arquivos para o usuário atual." '</label></a>'
 
   echo "<p>"
 
   echo '<a href="apache-permission-default.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
-  echo "Configura as permissões da pasta padrão do Apache, /var/www/html, para o usuário padrão: www-data"
+  echo $"Configura as permissões da pasta padrão do Apache, /var/www/html, para o usuário padrão: www-data"
   echo '">' $"Alterar as permissões dos arquivos para o usuário padrão." '</label></a>'
 
   echo "<p>"
 
   echo '<a href="apache-folder.run" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
-  echo "Esta é a pasta padrão do Apache, aonde devem ficar os arquivos do seu site."
+  echo $"Esta é a pasta padrão do Apache, aonde devem ficar os arquivos do seu site."
   echo '">' $"Abrir a pasta /var/www/html" '</label></a>'
 
   echo "<p>"
 
   echo '<a href="apache-config.run" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
-  echo "Pasta que contêm os arquivos de configuração do Apache."
+  echo $"Pasta que contêm os arquivos de configuração do Apache."
   echo '">' $"Abrir a pasta de configurações /etc/apache2" '</label></a>'
 
   echo '</p></div></li>'
@@ -182,11 +182,11 @@ echo '</div><div class="collapsible-body"><p>'
 if [ -e "/usr/sbin/mysqld" ] && [ -e "/usr/sbin/apache2" ] ; then
 
   if [ -e "/usr/share/phpmyadmin/index.php" ]; then
-    echo '<a href="remove-phpmyadmin-wait1.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Desinstala o Phpmyadmin.">' $"Remover o Phpmyadmin" '</label></a><p>'
+    echo '<a href="remove-phpmyadmin-wait1.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Desinstala o Phpmyadmin." '">' $"Remover o Phpmyadmin" '</label></a><p>'
     
-    echo '<a href="open-phpmyadmin.run" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Abre o navegador na página do Phpmyadmin">' $"Acessar o Phpmyadmin" '</label></a>'
+    echo '<a href="open-phpmyadmin.run" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Abre o navegador na página do Phpmyadmin" '">' $"Acessar o Phpmyadmin" '</label></a>'
   else
-    echo '<a href="install-phpmyadmin-wait1.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Instala o Phpmyadmin.">' $"Instalar o gerenciador de banco de dados Phpmyadmin" '</label></a>'
+    echo '<a href="install-phpmyadmin-wait1.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Instala o Phpmyadmin." '">' $"Instalar o gerenciador de banco de dados Phpmyadmin" '</label></a>'
   fi
 
 else
@@ -197,7 +197,7 @@ fi
 
 if [ -e "/usr/sbin/mysqld" ]; then
   echo "<p>"
-  echo '<a href="mysql-admin-password.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Nesse sistema utilizamos dois administradores no Mysql, o root, utilizado apenas por linha de comando e o admin, que pode ser utilizado, por exemplo, no Phpmyadmin.">' $"Alterar a senha do usuário admin do Mysql" '</label></a>'
+  echo '<a href="mysql-admin-password.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Nesse sistema utilizamos dois administradores no Mysql, o root, utilizado apenas por linha de comando e o admin, que pode ser utilizado, por exemplo, no Phpmyadmin." '">' $"Alterar a senha do usuário admin do Mysql" '</label></a>'
 fi
 
 echo '</p></div></li>'
@@ -211,39 +211,39 @@ echo '<div class="row">'
 echo '<div class="col s6">'
 
 if [ -e "/usr/bin/atom" ]; then
-  echo '<a href="install-apps-wait.sh.htm?remove_atom=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Desinstala o editor Atom.">' $"Remover o Atom" '</label></a><p>'
+  echo '<a href="install-apps-wait.sh.htm?remove_atom=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Desinstala o editor Atom." '">' $"Remover o Atom" '</label></a><p>'
 else
-  echo '<a href="install-apps-wait.sh.htm?install_atom=1" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Instala o editor Atom.">' $"Instalar o Atom" '</label></a><p>'
+  echo '<a href="install-apps-wait.sh.htm?install_atom=1" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Instala o editor Atom." '">' $"Instalar o Atom" '</label></a><p>'
 fi
 
 
 if [ -e "/usr/bin/bluefish" ]; then
-  echo '<a href="install-apps-wait.sh.htm?remove_bluefish=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Desinstala o editor Bluefish.">' $"Remover o Bluefish" '</label></a><p>'
+  echo '<a href="install-apps-wait.sh.htm?remove_bluefish=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Desinstala o editor Bluefish." '">' $"Remover o Bluefish" '</label></a><p>'
 else
-  echo '<a href="install-apps-wait.sh.htm?install_bluefish=1" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Instala o editor Bluefish.">' $"Instalar o Bluefish" '</label></a><p>'
+  echo '<a href="install-apps-wait.sh.htm?install_bluefish=1" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Instala o editor Bluefish." '">' $"Instalar o Bluefish" '</label></a><p>'
 fi
 
 
 if [ -e "/usr/share/codium/codium" ]; then
-  echo '<a href="install-apps-wait.sh.htm?remove_codium=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Desinstala o editor VSCodium.">' $"Remover o VSCodium" '</label></a><p>'
+  echo '<a href="install-apps-wait.sh.htm?remove_codium=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Desinstala o editor VSCodium." '">' $"Remover o VSCodium" '</label></a><p>'
 else
-  echo '<a href="install-apps-wait.sh.htm?install_codium=1" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Instala o editor VSCodium.">' $"Instalar o VSCodium" '</label></a><p>'
+  echo '<a href="install-apps-wait.sh.htm?install_codium=1" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Instala o editor VSCodium." '">' $"Instalar o VSCodium" '</label></a><p>'
 fi
 echo '</div>'
 echo '<div class="col s6">'
 
 
 if [ -e "/usr/share/code/code" ]; then
-  echo '<a href="install-apps-wait.sh.htm?remove_code=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Desinstala o editor Visual Studio Code.">' $"Remover o VSCode" '</label></a><p>'
+  echo '<a href="install-apps-wait.sh.htm?remove_code=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Desinstala o editor Visual Studio Code." '">' $"Remover o VSCode" '</label></a><p>'
 else
-  echo '<a href="install-apps-wait.sh.htm?install_code=1" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Instala o editor Visual Studio Code.">' $"Instalar o VSCode" '</label></a><p>'
+  echo '<a href="install-apps-wait.sh.htm?install_code=1" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Instala o editor Visual Studio Code." '">' $"Instalar o VSCode" '</label></a><p>'
 fi
 
 
 if [ -e "/opt/sublime_text/sublime_text" ]; then
-  echo '<a href="install-apps-wait.sh.htm?remove_sublime=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Desinstala o editor Sublime Text. (Este programa não é software livre)">' $"Remover o Sublime Text" '</label></a><p>'
+  echo '<a href="install-apps-wait.sh.htm?remove_sublime=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Desinstala o editor Sublime Text. (Este programa não é software livre)" '">' $"Remover o Sublime Text" '</label></a><p>'
 else
-  echo '<a href="install-apps-wait.sh.htm?install_sublime=1" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Instala o editor Sublime Text. (Este programa não é software livre)">' $"Instalar o Sublime Text" '</label></a><p>'
+  echo '<a href="install-apps-wait.sh.htm?install_sublime=1" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Instala o editor Sublime Text. (Este programa não é software livre)" '">' $"Instalar o Sublime Text" '</label></a><p>'
 fi
 
 

@@ -1,0 +1,351 @@
+# Portuguese translations for bigapache package.
+# Copyright (C) 2019 THE bigapache'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the bigapache package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bigapache\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-19 05:21-0300\n"
+"PO-Revision-Date: 2019-08-19 05:26-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.1\n"
+
+msgid "Desenvolvimento WEB"
+msgstr "El desarrollo de la WEB"
+
+msgid "Instale servidores e outras facilidades"
+msgstr "Instale los servidores y el resto de instalaciones"
+
+msgid "GPL v2 or greater"
+msgstr "La GPL v2 o superior"
+
+msgid "Bruno Gonçalves"
+msgstr ""
+
+msgid "15/07/2017"
+msgstr ""
+
+msgid "https://github.com/biglinux/bigapache"
+msgstr ""
+
+msgid "https://www.biglinux.com.br"
+msgstr ""
+
+msgid "Configuração aplicada!"
+msgstr "Configuración de aplicación!"
+
+msgid "Voltar"
+msgstr "Volver"
+
+msgid "Fechar"
+msgstr "Cerrar"
+
+msgid "Baixe vídeos do youtube"
+msgstr "Descarga vídeos de youtube"
+
+msgid "https://github.com/biglinux/bigkernel"
+msgstr ""
+
+msgid "O servidor Apache está instalado."
+msgstr "El servidor Apache está instalado."
+
+msgid "O servidor Apache não está instalado."
+msgstr "El servidor http Apache no está instalado."
+
+msgid "O servidor Mysql está instalado."
+msgstr "El servidor Mysql está instalado."
+
+msgid "O servidor Mysql não está instalado."
+msgstr "El servidor Mysql no está instalado."
+
+msgid "25/07/2019"
+msgstr "25/07/2019"
+
+msgid "O Phpmyadmin está instalado."
+msgstr "En el Phpmyadmin instalado."
+
+msgid "O Phpmyadmin não está instalado."
+msgstr "En el Phpmyadmin no está instalado."
+
+msgid "Servidor WEB Apache"
+msgstr "El Servidor de WEB de Apache"
+
+msgid "Instalado"
+msgstr "Instalado"
+
+msgid "Desinstala o Apache e o suporte à PHP, Python e Perl."
+msgstr "Desinstala el Apache y el soporte para PHP, ruby, Python y Perl."
+
+msgid "Remover o servidor WEB Apache"
+msgstr "Para quitar el servidor de WEB de Apache"
+
+msgid ""
+"O Apache está funcionando no momento, utilize esta opção para fechar o "
+"servidor."
+msgstr ""
+"El Apache se está ejecutando en ese momento, el uso de esta opción para "
+"activar el servidor."
+
+msgid "Parar o Apache"
+msgstr "Parar el Apache"
+
+msgid ""
+"O Apache não está funcionando no momento, utilize esta opção para iniciar o "
+"servidor."
+msgstr ""
+"El Apache no está funcionando correctamente, puede usar esta opción para "
+"que se inicie el servidor."
+
+msgid "Iniciar o Apache"
+msgstr "Para Iniciar el Apache"
+
+msgid "O Apache está sendo iniciado automaticamente ao ligar o computador."
+msgstr "El Apache se inicia automáticamente al encender el equipo."
+
+msgid "Parar de iniciar o Apache ao ligar o computador"
+msgstr "Deja de arrancar el Apache, que al encender el ordenador"
+
+msgid ""
+"O Apache não está sendo iniciado automaticamente ao ligar o computador."
+msgstr "El Apache, que no se inicia automáticamente al encender el equipo."
+
+msgid "Marcar o Apache para iniciar ao ligar o computador"
+msgstr "Para Marcar el Apache para que inicie al arrancar el sistema"
+
+msgid "Não está instalado"
+msgstr "No se ha instalado"
+
+msgid "Instala o Apache com suporte a PHP, Python e Perl."
+msgstr "Instale el Apache con soporte para PHP, ruby, Python y Perl."
+
+msgid "Instalar o servidor WEB Apache"
+msgstr "Para Instalar el servidor WEB Apache"
+
+msgid "Servidor Mysql"
+msgstr "El Servidor De Mysql."
+
+msgid "Desinstala o Mysql."
+msgstr "Desinstalar Mysql."
+
+msgid "Remover o servidor de banco de dados Mysql"
+msgstr "Retire el motor de base de datos Mysql."
+
+msgid ""
+"O Mysql está funcionando no momento, utilize esta opção para fechar o "
+"servidor."
+msgstr ""
+"Mysql se está ejecutando en ese momento, el uso de esta opción para activar "
+"el servidor."
+
+msgid "Parar o Mysql"
+msgstr "Dejar que el Mysql."
+
+msgid ""
+"O Mysql não está funcionando no momento, utilize esta opção para iniciar o "
+"servidor."
+msgstr ""
+"Mysql no está funcionando correctamente, puede usar esta opción para que se "
+"inicie el servidor."
+
+msgid "Iniciar o Mysql"
+msgstr "Arrancar el Mysql."
+
+msgid "O Mysql está sendo iniciado automaticamente ao ligar o computador."
+msgstr "Mysql se inicie automáticamente al encender el equipo."
+
+msgid "Parar de iniciar o Mysql ao ligar o computador"
+msgstr "Deja de inicio de Mysql, al encender el ordenador"
+
+msgid "O Mysql não está sendo iniciado automaticamente ao ligar o computador."
+msgstr "Mysql no se inicia automáticamente al encender el equipo."
+
+msgid "Marcar o Mysql para iniciar ao ligar o computador"
+msgstr "Para Marcar el Mysql para que inicie al arrancar el sistema"
+
+msgid "Instala o Mysql."
+msgstr "Se Instala el Mysql."
+
+msgid "Instalar o servidor de banco de dados Mysql"
+msgstr "Para Instalar el servidor de base de datos Mysql."
+
+msgid "Configurações do Apache"
+msgstr "La configuración de Apache."
+
+msgid ""
+"Configura as permissões da pasta padrão do Apache, /var/www/html, para o "
+"usuário atual: $USER. Ao fazer isto, basta acessar a pasta /var/www/html e "
+"adicionar ou modificar os arquivos com o seu usuário, sem problemas de "
+"falta de permissão."
+msgstr ""
+"Configurar los permisos de la carpeta por defecto de Apache (/var/www/html, "
+"para que el usuario activo: $USER). Al hacer esto, sólo tienes que acceder "
+"a la carpeta /var/www/html, y la adición o modificación de los archivos con "
+"su nombre de usuario, no hay problemas de falta de consentimiento."
+
+msgid "Alterar as permissões dos arquivos para o usuário atual."
+msgstr "Cambiar los permisos de los archivos para que el usuario actual."
+
+msgid ""
+"Configura as permissões da pasta padrão do Apache, /var/www/html, para o "
+"usuário padrão: www-data"
+msgstr ""
+"Configurar los permisos de la carpeta por defecto de Apache (/var/www/html, "
+"para que el usuario y la fecha de"
+
+msgid "Alterar as permissões dos arquivos para o usuário padrão."
+msgstr "Cambiar los permisos de los archivos para que el usuario por defecto."
+
+msgid ""
+"Esta é a pasta padrão do Apache, aonde devem ficar os arquivos do seu site."
+msgstr ""
+"Esta es la carpeta por defecto del servidor Apache, donde estarán los "
+"archivos de su sitio web."
+
+msgid "Abrir a pasta /var/www/html"
+msgstr "Abra la carpeta en el directorio /var/www/html"
+
+msgid "Pasta que contêm os arquivos de configuração do Apache."
+msgstr "La carpeta que contiene los archivos de configuración de Apache."
+
+msgid "Abrir a pasta de configurações /etc/apache2"
+msgstr "Al Abrir la carpeta de configuración en /etc/apache2"
+
+msgid "Gerenciar o Mysql"
+msgstr "Administrar Mysql."
+
+msgid "Desinstala o Phpmyadmin."
+msgstr "Desinstala el Phpmyadmin."
+
+msgid "Remover o Phpmyadmin"
+msgstr "Para quitar el Phpmyadmin"
+
+msgid "Abre o navegador na página do Phpmyadmin"
+msgstr "Abre el navegador web en la página de Phpmyadmin"
+
+msgid "Acessar o Phpmyadmin"
+msgstr "Acceder a Phpmyadmin"
+
+msgid "Instala o Phpmyadmin."
+msgstr "Instalar el Phpmyadmin."
+
+msgid "Instalar o gerenciador de banco de dados Phpmyadmin"
+msgstr "Para Instalar el administrador de la base de datos con Phpmyadmin"
+
+msgid "Para instalar o Phpmyadmin, instale primeiro o Apache e o Mysql."
+msgstr ""
+"Para instalar el Phpmyadmin, primero debe instalar el Apache y el Mysql."
+
+msgid ""
+"Nesse sistema utilizamos dois administradores no Mysql, o root, utilizado "
+"apenas por linha de comando e o admin, que pode ser utilizado, por exemplo, "
+"no Phpmyadmin."
+msgstr ""
+"En este sistema, utilizamos dos de los administradores en Mysql con el "
+"usuario root, solo desde la línea de comandos, y el administrador, el cual "
+"puede ser utilizado, por ejemplo, en el Phpmyadmin."
+
+msgid "Alterar a senha do usuário admin do Mysql"
+msgstr "Para cambiar la contraseña del usuario administrador de Mysql."
+
+msgid "Instalar ou remover editores de código"
+msgstr "Para Instalar o retirar a los editores de código"
+
+msgid "Desinstala o editor Atom."
+msgstr "Desinstala el editor de un Átomo."
+
+msgid "Remover o Atom"
+msgstr "Quitar un Átomo de"
+
+msgid "Instala o editor Atom."
+msgstr "Se Instala el editor de un Átomo."
+
+msgid "Instalar o Atom"
+msgstr "Para Instalar el Átomo de"
+
+msgid "Desinstala o editor Bluefish."
+msgstr "Desinstala el editor de Bluefish."
+
+msgid "Remover o Bluefish"
+msgstr "Para quitar el Bluefish"
+
+msgid "Instala o editor Bluefish."
+msgstr "Se Instala en el editor de Bluefish."
+
+msgid "Instalar o Bluefish"
+msgstr "Para Instalar el Bluefish"
+
+msgid "Desinstala o editor VSCodium."
+msgstr "Desinstala el editor de VSCodium."
+
+msgid "Remover o VSCodium"
+msgstr "Para quitar el VSCodium"
+
+msgid "Instala o editor VSCodium."
+msgstr "Se Instala en el editor de VSCodium."
+
+msgid "Instalar o VSCodium"
+msgstr "Para Instalar el VSCodium"
+
+msgid "Desinstala o editor Visual Studio Code."
+msgstr "Desinstala el editor de Código de Visual Studio."
+
+msgid "Remover o VSCode"
+msgstr "Para quitar el VSCode"
+
+msgid "Instala o editor Visual Studio Code."
+msgstr "Se Instala en el editor de Código de Visual Studio."
+
+msgid "Instalar o VSCode"
+msgstr "Para Instalar el VSCode"
+
+msgid "Desinstala o editor Sublime Text. (Este programa não é software livre)"
+msgstr ""
+"Desinstala el editor Sublime Text. Este programa no es software libre)"
+
+msgid "Remover o Sublime Text"
+msgstr "Para quitar el Sublime Text."
+
+msgid "Instala o editor Sublime Text. (Este programa não é software livre)"
+msgstr ""
+"Se Instala en el editor Sublime Text. Este programa no es software libre)"
+
+msgid "Instalar o Sublime Text"
+msgstr "Para Instalar Sublime Text."
+
+msgid "Aguarde, instalando o servidor Apache."
+msgstr "Espere a que la instalación del servidor web Apache."
+
+msgid "Aguarde..."
+msgstr "Por favor espere..."
+
+msgid "Aguarde, instalando o servidor Mysql."
+msgstr "Espere a que la instalación del servidor Mysql."
+
+msgid "Aguarde, instalando o Phpmyadmin."
+msgstr "Espere a que la instalación del Phpmyadmin."
+
+msgid ""
+"Escolha uma senha para o usuário admin do Mysql, não utilize aspas na senha:"
+msgstr ""
+"La elección de una contraseña para el usuario administrador de Mysql, por "
+"favor no use comillas de la contraseña:"
+
+msgid "Próximo"
+msgstr "El Próximo"
+
+msgid "Aguarde, desinstalando o servidor Apache."
+msgstr "Por favor espere, mediante la desinstalación del servidor web Apache."
+
+msgid "Aguarde, desinstalando o servidor Mysql."
+msgstr "Por favor espere, mediante la desinstalación del servidor de Mysql."
+
+msgid "Aguarde, desinstalando o Phpmyadmin."
+msgstr "Por favor espere, al desinstalar el Phpmyadmin."
