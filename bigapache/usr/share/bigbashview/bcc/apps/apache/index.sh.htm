@@ -3,6 +3,9 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigapache
 
+# Don't group windows
+xprop -id $(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2) -f WM_CLASS 8s -set WM_CLASS "$$"
+
 # Import BigControlCenter base modules / Importa os módulos básicos do BigControlCenter
 # That's include jquery and materialize / Isso inclui o jquery e o materialize
 # http://materializecss.com/
@@ -159,13 +162,13 @@ if [ -e "/usr/sbin/apache2" ]; then
 
   echo "<p>"
 
-  echo '<a href="apache-folder.run" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
+  echo "<a onclick=\"_run('./apache-folder.run')\" "' class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
   echo $"Esta é a pasta padrão do Apache, aonde devem ficar os arquivos do seu site."
   echo '">' $"Abrir a pasta /var/www/html" '</label></a>'
 
   echo "<p>"
 
-  echo '<a href="apache-config.run" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
+  echo "<a onclick=\"_run('./apache-config.run')\" "' class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
   echo $"Pasta que contêm os arquivos de configuração do Apache."
   echo '">' $"Abrir a pasta de configurações /etc/apache2" '</label></a>'
 
@@ -183,8 +186,7 @@ if [ -e "/usr/sbin/mysqld" ] && [ -e "/usr/sbin/apache2" ] ; then
 
   if [ -e "/usr/share/phpmyadmin/index.php" ]; then
     echo '<a href="remove-phpmyadmin-wait1.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Desinstala o Phpmyadmin." '">' $"Remover o Phpmyadmin" '</label></a><p>'
-    
-    echo '<a href="open-phpmyadmin.run" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Abre o navegador na página do Phpmyadmin" '">' $"Acessar o Phpmyadmin" '</label></a>'
+    echo "<a onclick=\"_run('./open-phpmyadmin.run')\" "' class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Abre o navegador na página do Phpmyadmin" '">' $"Acessar o Phpmyadmin" '</label></a>'
   else
     echo '<a href="install-phpmyadmin-wait1.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Instala o Phpmyadmin." '">' $"Instalar o gerenciador de banco de dados Phpmyadmin" '</label></a>'
   fi
