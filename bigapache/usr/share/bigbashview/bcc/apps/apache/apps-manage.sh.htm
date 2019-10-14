@@ -72,6 +72,14 @@ if [ "$p_remove_sublime" = "1" ]; then
     bigsudo /usr/share/bigbashview/bcc/apps/apache/apps-manage.sh remove-sublime
 fi
 
+if [ "$p_install_php" = "1" ]; then
+    bigsudo /usr/share/bigbashview/bcc/apps/apache/apps-manage.sh install-php
+fi
+
+if [ "$p_remove_php" = "1" ]; then
+    bigsudo /usr/share/bigbashview/bcc/apps/apache/apps-manage.sh remove-php
+fi
+
 
 # Start javascript
 echo '<script type="text/javascript">
