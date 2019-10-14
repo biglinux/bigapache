@@ -204,7 +204,7 @@ fi
 
 echo '</p></div></li>'
 
-echo '<li><div class="collapsible-header">' $"Instalar ou remover editores de código"
+echo '<li><div class="collapsible-header">' $"Instalar ou remover editores de código e o PHP"
 
 echo '</div><div class="collapsible-body"><p>'
 
@@ -246,6 +246,12 @@ if [ -e "/opt/sublime_text/sublime_text" ]; then
   echo '<a href="install-apps-wait.sh.htm?remove_sublime=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Desinstala o editor Sublime Text. (Este programa não é software livre)" '">' $"Remover o Sublime Text" '</label></a><p>'
 else
   echo '<a href="install-apps-wait.sh.htm?install_sublime=1" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Instala o editor Sublime Text. (Este programa não é software livre)" '">' $"Instalar o Sublime Text" '</label></a><p>'
+fi
+
+if [ -e "/usr/bin/php" ]; then
+  echo '<a href="install-apps-wait.sh.htm?remove_php=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Desinstala a linguagem PHP." '">' $"Remover o PHP" '</label></a><p>'
+else
+  echo '<a href="install-apps-wait.sh.htm?install_php=1" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Instala a linguagem PHP." '">' $"Instalar o PHP" '</label></a><p>'
 fi
 
 
