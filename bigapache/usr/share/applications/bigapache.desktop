@@ -2,8 +2,8 @@
 Categories=System;
 Exec=bigapache
 Icon=/usr/share/bigbashview/bcc/apps/apache/bigapache.png
-Name[pt_BR]=Gerenciar servidor WEB e Mysql
-Name=Web server and Mysql manager
+Name[pt_BR]=Gerenciar servidor WEB e MariaDB
+Name=Web server and MariaDB manager
 StartupNotify=true
 Terminal=false
 Type=Application

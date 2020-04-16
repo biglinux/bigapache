@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bigapache\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-19 05:21-0300\n"
+"POT-Creation-Date: 2020-04-16 00:13-0300\n"
 "PO-Revision-Date: 2019-08-19 05:26-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -24,19 +24,7 @@ msgstr "El desarrollo de la WEB"
 msgid "Instale servidores e outras facilidades"
 msgstr "Instale los servidores y el resto de instalaciones"
 
-msgid "GPL v2 or greater"
-msgstr "La GPL v2 o superior"
-
 msgid "Bruno Gonçalves"
-msgstr ""
-
-msgid "15/07/2017"
-msgstr ""
-
-msgid "https://github.com/biglinux/bigapache"
-msgstr ""
-
-msgid "https://www.biglinux.com.br"
 msgstr ""
 
 msgid "Configuração aplicada!"
@@ -48,11 +36,14 @@ msgstr "Volver"
 msgid "Fechar"
 msgstr "Cerrar"
 
+msgid "GPL v2 or greater"
+msgstr "La GPL v2 o superior"
+
+msgid "15/07/2017"
+msgstr ""
+
 msgid "Baixe vídeos do youtube"
 msgstr "Descarga vídeos de youtube"
-
-msgid "https://github.com/biglinux/bigkernel"
-msgstr ""
 
 msgid "O servidor Apache está instalado."
 msgstr "El servidor Apache está instalado."
@@ -60,20 +51,35 @@ msgstr "El servidor Apache está instalado."
 msgid "O servidor Apache não está instalado."
 msgstr "El servidor http Apache no está instalado."
 
-msgid "O servidor Mysql está instalado."
+#, fuzzy
+msgid "O servidor MariaDB (Mysql) está instalado."
 msgstr "El servidor Mysql está instalado."
 
-msgid "O servidor Mysql não está instalado."
-msgstr "El servidor Mysql no está instalado."
+msgid ""
+"Lembre que o usuário root pode ser acessado apenas no terminal e utilizando "
+"o usuário root do sistema."
+msgstr ""
 
-msgid "25/07/2019"
-msgstr "25/07/2019"
+msgid ""
+"Para utilizar sistemas web que precisem conectar no banco de dados, utilize "
+"a opção “Gerenciar o MariaDB (Mysql)” e selecione a opção alterar senha do "
+"usuário admin. Então será criado o usuário de nome admin com a senha que "
+"você escolher, esse usuário possui todos os poderes administrativos e pode "
+"ser acessado utilizando php."
+msgstr ""
+
+#, fuzzy
+msgid "O servidor MariaDB (Mysql) não está instalado."
+msgstr "El servidor Mysql no está instalado."
 
 msgid "O Phpmyadmin está instalado."
 msgstr "En el Phpmyadmin instalado."
 
 msgid "O Phpmyadmin não está instalado."
 msgstr "En el Phpmyadmin no está instalado."
+
+msgid "Download concluído"
+msgstr ""
 
 msgid "Servidor WEB Apache"
 msgstr "El Servidor de WEB de Apache"
@@ -101,8 +107,8 @@ msgid ""
 "O Apache não está funcionando no momento, utilize esta opção para iniciar o "
 "servidor."
 msgstr ""
-"El Apache no está funcionando correctamente, puede usar esta opción para "
-"que se inicie el servidor."
+"El Apache no está funcionando correctamente, puede usar esta opción para que "
+"se inicie el servidor."
 
 msgid "Iniciar o Apache"
 msgstr "Para Iniciar el Apache"
@@ -113,8 +119,7 @@ msgstr "El Apache se inicia automáticamente al encender el equipo."
 msgid "Parar de iniciar o Apache ao ligar o computador"
 msgstr "Deja de arrancar el Apache, que al encender el ordenador"
 
-msgid ""
-"O Apache não está sendo iniciado automaticamente ao ligar o computador."
+msgid "O Apache não está sendo iniciado automaticamente ao ligar o computador."
 msgstr "El Apache, que no se inicia automáticamente al encender el equipo."
 
 msgid "Marcar o Apache para iniciar ao ligar o computador"
@@ -129,51 +134,67 @@ msgstr "Instale el Apache con soporte para PHP, ruby, Python y Perl."
 msgid "Instalar o servidor WEB Apache"
 msgstr "Para Instalar el servidor WEB Apache"
 
-msgid "Servidor Mysql"
+#, fuzzy
+msgid "Servidor MariaDB (Mysql)"
 msgstr "El Servidor De Mysql."
 
-msgid "Desinstala o Mysql."
+#, fuzzy
+msgid "Desinstala o MariaDB (Mysql)."
 msgstr "Desinstalar Mysql."
 
-msgid "Remover o servidor de banco de dados Mysql"
+#, fuzzy
+msgid "Remover o servidor de banco de dados MariaDB (Mysql)"
 msgstr "Retire el motor de base de datos Mysql."
 
+#, fuzzy
 msgid ""
-"O Mysql está funcionando no momento, utilize esta opção para fechar o "
-"servidor."
+"O MariaDB (Mysql) está funcionando no momento, utilize esta opção para "
+"fechar o servidor."
 msgstr ""
 "Mysql se está ejecutando en ese momento, el uso de esta opción para activar "
 "el servidor."
 
-msgid "Parar o Mysql"
+#, fuzzy
+msgid "Parar o MariaDB (Mysql)"
 msgstr "Dejar que el Mysql."
 
+#, fuzzy
 msgid ""
-"O Mysql não está funcionando no momento, utilize esta opção para iniciar o "
-"servidor."
+"O MariaDB (Mysql) não está funcionando no momento, utilize esta opção para "
+"iniciar o servidor."
 msgstr ""
 "Mysql no está funcionando correctamente, puede usar esta opción para que se "
 "inicie el servidor."
 
-msgid "Iniciar o Mysql"
+#, fuzzy
+msgid "Iniciar o MariaDB (Mysql)"
 msgstr "Arrancar el Mysql."
 
-msgid "O Mysql está sendo iniciado automaticamente ao ligar o computador."
+#, fuzzy
+msgid ""
+"O MariaDB (Mysql) está sendo iniciado automaticamente ao ligar o computador."
 msgstr "Mysql se inicie automáticamente al encender el equipo."
 
-msgid "Parar de iniciar o Mysql ao ligar o computador"
+#, fuzzy
+msgid "Parar de iniciar o MariaDB (Mysql) ao ligar o computador"
 msgstr "Deja de inicio de Mysql, al encender el ordenador"
 
-msgid "O Mysql não está sendo iniciado automaticamente ao ligar o computador."
+#, fuzzy
+msgid ""
+"O MariaDB (Mysql) não está sendo iniciado automaticamente ao ligar o "
+"computador."
 msgstr "Mysql no se inicia automáticamente al encender el equipo."
 
-msgid "Marcar o Mysql para iniciar ao ligar o computador"
+#, fuzzy
+msgid "Marcar o MariaDB (Mysql) para iniciar ao ligar o computador"
 msgstr "Para Marcar el Mysql para que inicie al arrancar el sistema"
 
-msgid "Instala o Mysql."
+#, fuzzy
+msgid "Instala o MariaDB (Mysql)."
 msgstr "Se Instala el Mysql."
 
-msgid "Instalar o servidor de banco de dados Mysql"
+#, fuzzy
+msgid "Instalar o servidor de banco de dados MariaDB (Mysql)"
 msgstr "Para Instalar el servidor de base de datos Mysql."
 
 msgid "Configurações do Apache"
@@ -182,13 +203,13 @@ msgstr "La configuración de Apache."
 msgid ""
 "Configura as permissões da pasta padrão do Apache, /var/www/html, para o "
 "usuário atual: $USER. Ao fazer isto, basta acessar a pasta /var/www/html e "
-"adicionar ou modificar os arquivos com o seu usuário, sem problemas de "
-"falta de permissão."
+"adicionar ou modificar os arquivos com o seu usuário, sem problemas de falta "
+"de permissão."
 msgstr ""
 "Configurar los permisos de la carpeta por defecto de Apache (/var/www/html, "
-"para que el usuario activo: $USER). Al hacer esto, sólo tienes que acceder "
-"a la carpeta /var/www/html, y la adición o modificación de los archivos con "
-"su nombre de usuario, no hay problemas de falta de consentimiento."
+"para que el usuario activo: $USER). Al hacer esto, sólo tienes que acceder a "
+"la carpeta /var/www/html, y la adición o modificación de los archivos con su "
+"nombre de usuario, no hay problemas de falta de consentimiento."
 
 msgid "Alterar as permissões dos arquivos para o usuário atual."
 msgstr "Cambiar los permisos de los archivos para que el usuario actual."
@@ -218,7 +239,8 @@ msgstr "La carpeta que contiene los archivos de configuración de Apache."
 msgid "Abrir a pasta de configurações /etc/apache2"
 msgstr "Al Abrir la carpeta de configuración en /etc/apache2"
 
-msgid "Gerenciar o Mysql"
+#, fuzzy
+msgid "Gerenciar o MariaDB (Mysql)"
 msgstr "Administrar Mysql."
 
 msgid "Desinstala o Phpmyadmin."
@@ -239,20 +261,24 @@ msgstr "Instalar el Phpmyadmin."
 msgid "Instalar o gerenciador de banco de dados Phpmyadmin"
 msgstr "Para Instalar el administrador de la base de datos con Phpmyadmin"
 
-msgid "Para instalar o Phpmyadmin, instale primeiro o Apache e o Mysql."
+#, fuzzy
+msgid ""
+"Para instalar o Phpmyadmin, instale primeiro o Apache e o MariaDB (Mysql)."
 msgstr ""
 "Para instalar el Phpmyadmin, primero debe instalar el Apache y el Mysql."
 
+#, fuzzy
 msgid ""
-"Nesse sistema utilizamos dois administradores no Mysql, o root, utilizado "
-"apenas por linha de comando e o admin, que pode ser utilizado, por exemplo, "
-"no Phpmyadmin."
+"Nesse sistema utilizamos dois administradores no MariaDB (Mysql), o root, "
+"utilizado apenas por linha de comando e o admin, que pode ser utilizado, por "
+"exemplo, no Phpmyadmin."
 msgstr ""
 "En este sistema, utilizamos dos de los administradores en Mysql con el "
 "usuario root, solo desde la línea de comandos, y el administrador, el cual "
 "puede ser utilizado, por ejemplo, en el Phpmyadmin."
 
-msgid "Alterar a senha do usuário admin do Mysql"
+#, fuzzy
+msgid "Alterar a senha do usuário admin do MariaDB (Mysql)"
 msgstr "Para cambiar la contraseña del usuario administrador de Mysql."
 
 msgid "Instalar ou remover editores de código"
@@ -307,8 +333,7 @@ msgid "Instalar o VSCode"
 msgstr "Para Instalar el VSCode"
 
 msgid "Desinstala o editor Sublime Text. (Este programa não é software livre)"
-msgstr ""
-"Desinstala el editor Sublime Text. Este programa no es software libre)"
+msgstr "Desinstala el editor Sublime Text. Este programa no es software libre)"
 
 msgid "Remover o Sublime Text"
 msgstr "Para quitar el Sublime Text."
@@ -320,20 +345,26 @@ msgstr ""
 msgid "Instalar o Sublime Text"
 msgstr "Para Instalar Sublime Text."
 
+msgid "Dicas de instalação e uso"
+msgstr ""
+
 msgid "Aguarde, instalando o servidor Apache."
 msgstr "Espere a que la instalación del servidor web Apache."
 
 msgid "Aguarde..."
 msgstr "Por favor espere..."
 
-msgid "Aguarde, instalando o servidor Mysql."
+#, fuzzy
+msgid "Aguarde, instalando o servidor MariaDB (Mysql)."
 msgstr "Espere a que la instalación del servidor Mysql."
 
 msgid "Aguarde, instalando o Phpmyadmin."
 msgstr "Espere a que la instalación del Phpmyadmin."
 
+#, fuzzy
 msgid ""
-"Escolha uma senha para o usuário admin do Mysql, não utilize aspas na senha:"
+"Escolha uma senha para o usuário admin do MariaDB (Mysql), não utilize aspas "
+"na senha:"
 msgstr ""
 "La elección de una contraseña para el usuario administrador de Mysql, por "
 "favor no use comillas de la contraseña:"
@@ -341,11 +372,55 @@ msgstr ""
 msgid "Próximo"
 msgstr "El Próximo"
 
+msgid "https://github.com/biglinux/bigapache"
+msgstr ""
+
+msgid "https://www.biglinux.com.br"
+msgstr ""
+
+msgid ""
+"Esse painel de configurações para servidores é feito para auxiliar pessoas\n"
+"que estão estudando sobre criação de sites, ou para servidores domésticos,\n"
+"para o uso de servidores profissionais e empresariais é recomendado uma "
+"série\n"
+"de configurações extras, tanto de otimização de desempenho quanto de "
+"segurança.\n"
+"\n"
+"Ao instalar o servidor Apache, o PHP será instalado e configurado "
+"automaticamente.\n"
+"\n"
+"MariaDB e Mysql são compatíveis, portanto, os programas que necessitam\n"
+"de um desses bancos de dados, também funcionam no outro, utilizam os\n"
+"mesmos comandos e etc.\n"
+"\n"
+"Para facilitar o uso do MariaDB, após a instalação, utilize a opção alterar "
+"a\n"
+"senha do usuário admin do MariaDB.\n"
+"Em alguns guias encontrados na internet, informam para utilizar o usuário\n"
+"root para gerenciar o MariaDB ou o Mysql, no nosso sistema o usuário\n"
+"admin possui os mesmos usos e recursos do usuário root.\n"
+"\n"
+"Instale também o Phpmyadmin para facilitar a criação e manutenção do\n"
+"banco de dados do seu servidor Mariadb.\n"
+"\n"
+"Para concluir, recomendo que você altere as permissões dos arquivos\n"
+"para o usuário atual, nas configurações do Apache, com isso basta\n"
+"acessar a pasta /var/www/html e criar os serviços web ou sites que\n"
+"você desejar."
+msgstr ""
+
+msgid "Web Server"
+msgstr ""
+
 msgid "Aguarde, desinstalando o servidor Apache."
 msgstr "Por favor espere, mediante la desinstalación del servidor web Apache."
 
-msgid "Aguarde, desinstalando o servidor Mysql."
+#, fuzzy
+msgid "Aguarde, desinstalando o servidor MariaDB (Mysql)."
 msgstr "Por favor espere, mediante la desinstalación del servidor de Mysql."
 
 msgid "Aguarde, desinstalando o Phpmyadmin."
 msgstr "Por favor espere, al desinstalar el Phpmyadmin."
+
+#~ msgid "25/07/2019"
+#~ msgstr "25/07/2019"

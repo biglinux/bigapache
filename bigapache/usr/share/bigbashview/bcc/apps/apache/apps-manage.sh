@@ -89,18 +89,3 @@ if [ "$1" = "remove-sublime" ]; then
     echo "sublime-text" | sed 's/$/\ /;s/--remove //' | sed 's/\ /\ uninstall\r\n/g' > /tmp/bigsynaptic$$
     synaptic --parent-window-id "$windowID" --set-selections --non-interactive -o Synaptic::closeZvt=true --hide-main-window < /tmp/bigsynaptic$$
 fi
-
-if [ "$1" = "install-php" ]; then
-
-    synaptic --parent-window-id "$windowID" --non-interactive -o Synaptic::closeZvt=true --hide-main-window --update-at-startup
-    
-    echo "php" | sed 's/$/\ /;s/--install //' | sed 's/\ /\ install\r\n/g' > /tmp/bigsynaptic$$
-
-    synaptic --parent-window-id "$windowID" --set-selections --non-interactive -o Synaptic::closeZvt=true --hide-main-window < /tmp/bigsynaptic$$
-fi
-
-if [ "$1" = "remove-php" ]; then
-    echo "php" | sed 's/$/\ /;s/--remove //' | sed 's/\ /\ uninstall\r\n/g' > /tmp/bigsynaptic$$
-    synaptic --parent-window-id "$windowID" --set-selections --non-interactive -o Synaptic::closeZvt=true --hide-main-window < /tmp/bigsynaptic$$
-
-fi

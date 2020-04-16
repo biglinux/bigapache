@@ -22,10 +22,10 @@ bcc_logo="logo.png"
 # To disable about use: bcc_about="no"
 bcc_about="yes"
 bcc_about_license=$"GPL v2 or greater"
-bcc_about_by=$"Bruno Gonçalves"
-bcc_about_release_date=$"15/07/2017"
-bcc_about_url_code=$"https://github.com/biglinux/bigapache"
-bcc_about_url_project=$"https://www.biglinux.com.br"
+bcc_about_by="Bruno Gonçalves"
+bcc_about_release_date="15/07/2017"
+bcc_about_url_code="https://github.com/biglinux/bigapache"
+bcc_about_url_project="https://www.biglinux.com.br"
 
 # Print header in screen
 bcc_header
@@ -106,38 +106,38 @@ else
 fi
 echo '</p></div></li>'
 
-echo '<li><div class="collapsible-header">' $"Servidor Mysql"
+echo '<li><div class="collapsible-header">' $"Servidor MariaDB (Mysql)"
 
 if [ -e "/usr/sbin/mysqld" ]; then
   echo '<span class="badge">' $"Instalado" '</span>'
   echo '</div><div class="collapsible-body"><p>'
-  echo '<a href="remove-mysql-wait1.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Desinstala o Mysql." '">' $"Remover o servidor de banco de dados Mysql" '</label></a><p>'
+  echo '<a href="remove-mysql-wait1.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Desinstala o MariaDB (Mysql)." '">' $"Remover o servidor de banco de dados MariaDB (Mysql)" '</label></a><p>'
 
 
   if [ "$(ps -e | grep mysqld)" != "" ]; then
     echo '<a href="systemd-manage.sh.htm?stop_mysql=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
-    echo $"O Mysql está funcionando no momento, utilize esta opção para fechar o servidor."
-    echo '">' $"Parar o Mysql" '</label></a><p>'
+    echo $"O MariaDB (Mysql) está funcionando no momento, utilize esta opção para fechar o servidor."
+    echo '">' $"Parar o MariaDB (Mysql)" '</label></a><p>'
   else
     echo '<a href="systemd-manage.sh.htm?start_mysql=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
-    echo $"O Mysql não está funcionando no momento, utilize esta opção para iniciar o servidor."
-    echo '">' $"Iniciar o Mysql" '</label></a><p>'
+    echo $"O MariaDB (Mysql) não está funcionando no momento, utilize esta opção para iniciar o servidor."
+    echo '">' $"Iniciar o MariaDB (Mysql)" '</label></a><p>'
   fi
 
   if [ -e "/etc/systemd/system/multi-user.target.wants/mysql.service" ]; then
     echo '<a href="systemd-manage.sh.htm?disable_mysql=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
-    echo $"O Mysql está sendo iniciado automaticamente ao ligar o computador."
-    echo '">' $"Parar de iniciar o Mysql ao ligar o computador" '</label></a><p>'
+    echo $"O MariaDB (Mysql) está sendo iniciado automaticamente ao ligar o computador."
+    echo '">' $"Parar de iniciar o MariaDB (Mysql) ao ligar o computador" '</label></a><p>'
   else
     echo '<a href="systemd-manage.sh.htm?enable_mysql=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
-    echo $"O Mysql não está sendo iniciado automaticamente ao ligar o computador."
-    echo '">' $"Marcar o Mysql para iniciar ao ligar o computador" '</label></a><p>'
+    echo $"O MariaDB (Mysql) não está sendo iniciado automaticamente ao ligar o computador."
+    echo '">' $"Marcar o MariaDB (Mysql) para iniciar ao ligar o computador" '</label></a><p>'
   fi
 
 else
   echo '<span class="badge">' $"Não está instalado" '</span>'
   echo '</div><div class="collapsible-body"><p>'
-  echo '<a href="install-mysql-wait1.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Instala o Mysql." '">' $"Instalar o servidor de banco de dados Mysql" '</label></a><p>'
+  echo '<a href="install-mysql-wait1.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Instala o MariaDB (Mysql)." '">' $"Instalar o servidor de banco de dados MariaDB (Mysql)" '</label></a><p>'
 fi
 
 echo '</p></div></li>'
@@ -177,7 +177,7 @@ if [ -e "/usr/sbin/apache2" ]; then
 fi
 
 
-echo '<li><div class="collapsible-header">' $"Gerenciar o Mysql"
+echo '<li><div class="collapsible-header">' $"Gerenciar o MariaDB (Mysql)"
 
 echo '</div><div class="collapsible-body"><p>'
 
@@ -193,18 +193,18 @@ if [ -e "/usr/sbin/mysqld" ] && [ -e "/usr/sbin/apache2" ] ; then
 
 else
 
-  echo $"Para instalar o Phpmyadmin, instale primeiro o Apache e o Mysql."
+  echo $"Para instalar o Phpmyadmin, instale primeiro o Apache e o MariaDB (Mysql)."
 
 fi
 
 if [ -e "/usr/sbin/mysqld" ]; then
   echo "<p>"
-  echo '<a href="mysql-admin-password.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Nesse sistema utilizamos dois administradores no Mysql, o root, utilizado apenas por linha de comando e o admin, que pode ser utilizado, por exemplo, no Phpmyadmin." '">' $"Alterar a senha do usuário admin do Mysql" '</label></a>'
+  echo '<a href="mysql-admin-password.sh.htm" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Nesse sistema utilizamos dois administradores no MariaDB (Mysql), o root, utilizado apenas por linha de comando e o admin, que pode ser utilizado, por exemplo, no Phpmyadmin." '">' $"Alterar a senha do usuário admin do MariaDB (Mysql)" '</label></a>'
 fi
 
 echo '</p></div></li>'
 
-echo '<li><div class="collapsible-header">' $"Instalar ou remover editores de código e o PHP"
+echo '<li><div class="collapsible-header">' $"Instalar ou remover editores de código"
 
 echo '</div><div class="collapsible-body"><p>'
 
@@ -248,12 +248,6 @@ else
   echo '<a href="install-apps-wait.sh.htm?install_sublime=1" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Instala o editor Sublime Text. (Este programa não é software livre)" '">' $"Instalar o Sublime Text" '</label></a><p>'
 fi
 
-if [ -e "/usr/bin/php" ]; then
-  echo '<a href="install-apps-wait.sh.htm?remove_php=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Desinstala a linguagem PHP." '">' $"Remover o PHP" '</label></a><p>'
-else
-  echo '<a href="install-apps-wait.sh.htm?install_php=1" class="blue-text text-darken-4 text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip=" '$"Instala a linguagem PHP." '">' $"Instalar o PHP" '</label></a><p>'
-fi
-
 
 echo '</div>'
 
@@ -269,11 +263,15 @@ echo '</div>'
 # Start footer
 echo '<div id="bcc_footer">'
 echo '<div id="bcc_footer_right">'
+
+echo "<a onclick=\"_run('./open-tips.run')\" "' class="waves-effect waves-light btn blue-grey lighten-1"><img src=ok.png>'$"Dicas de instalação e uso"'</a>'
+
 echo '<a href="/usr/share/bigbashview/close.sh" class="waves-effect waves-light btn blue-grey lighten-1"><img src=cancel.png>'$"Fechar"'</a>'
 echo '</div>'
 echo '</div>'
 echo '</form>'
 
+ "<a onclick=\"_run('./open-phpmyadmin.run')\" "'
 
 #########
 # The end

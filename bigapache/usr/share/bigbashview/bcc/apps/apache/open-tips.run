@@ -1,0 +1,29 @@
+#!/bin/bash
+
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=bigapache
+
+kdialog --msgbox $"Esse painel de configurações para servidores é feito para auxiliar pessoas
+que estão estudando sobre criação de sites, ou para servidores domésticos,
+para o uso de servidores profissionais e empresariais é recomendado uma série
+de configurações extras, tanto de otimização de desempenho quanto de segurança.
+
+Ao instalar o servidor Apache, o PHP será instalado e configurado automaticamente.
+
+MariaDB e Mysql são compatíveis, portanto, os programas que necessitam
+de um desses bancos de dados, também funcionam no outro, utilizam os
+mesmos comandos e etc.
+
+Para facilitar o uso do MariaDB, após a instalação, utilize a opção alterar a
+senha do usuário admin do MariaDB.
+Em alguns guias encontrados na internet, informam para utilizar o usuário
+root para gerenciar o MariaDB ou o Mysql, no nosso sistema o usuário
+admin possui os mesmos usos e recursos do usuário root.
+
+Instale também o Phpmyadmin para facilitar a criação e manutenção do
+banco de dados do seu servidor Mariadb.
+
+Para concluir, recomendo que você altere as permissões dos arquivos
+para o usuário atual, nas configurações do Apache, com isso basta
+acessar a pasta /var/www/html e criar os serviços web ou sites que
+você desejar." --title $"Web Server"

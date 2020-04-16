@@ -19,10 +19,10 @@ bcc_logo="logo.png"
 # To disable about use: bcc_about="no"
 bcc_about="yes"
 bcc_about_license=$"GPL v2 or greater"
-bcc_about_by=$"Bruno Gonçalves"
-bcc_about_release_date=$"15/07/2017"
-bcc_about_url_code=$"https://github.com/biglinux/bigkernel"
-bcc_about_url_project=$"https://www.biglinux.com.br"
+bcc_about_by="Bruno Gonçalves"
+bcc_about_release_date="15/07/2017"
+bcc_about_url_code="https://github.com/biglinux/bigkernel"
+bcc_about_url_project="https://www.biglinux.com.br"
 
 # Print header in screen
 bcc_header
@@ -33,13 +33,13 @@ bcc_header
 
 echo '<br><br><br><br><center><b>'
 if [ -e "/usr/sbin/mysqld" ]; then
-    echo $"O servidor Mysql está instalado."
+    echo $"O servidor MariaDB (Mysql) está instalado."
     echo "</b><br><br>"
     echo $"Lembre que o usuário root pode ser acessado apenas no terminal e utilizando o usuário root do sistema."
     echo "<br><br>"
-    echo "Para utilizar sistemas web que precisem conectar no banco de dados, utilize a opção “Gerenciar o Mysql” e selecione a opção alterar senha do usuário admin. Então será criado o usuário de nome admin com a senha que você escolher, esse usuário possui todos os poderes administrativos e pode ser acessado utilizando php."
+    echo $"Para utilizar sistemas web que precisem conectar no banco de dados, utilize a opção “Gerenciar o MariaDB (Mysql)” e selecione a opção alterar senha do usuário admin. Então será criado o usuário de nome admin com a senha que você escolher, esse usuário possui todos os poderes administrativos e pode ser acessado utilizando php."
 else
-    echo $"O servidor Mysql não está instalado."
+    echo $"O servidor MariaDB (Mysql) não está instalado."
 fi
 echo '</b></center>'
 
