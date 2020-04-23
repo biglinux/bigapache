@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bigapache\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-16 00:13-0300\n"
+"POT-Creation-Date: 2020-04-23 05:01-0300\n"
 "PO-Revision-Date: 2019-08-19 05:26-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -24,6 +24,10 @@ msgstr "El desarrollo de la WEB"
 msgid "Instale servidores e outras facilidades"
 msgstr "Instale los servidores y el resto de instalaciones"
 
+#, fuzzy
+msgid "GPL v2 ou maior"
+msgstr "La GPL v2 o superior"
+
 msgid "Bruno Gonçalves"
 msgstr ""
 
@@ -36,14 +40,8 @@ msgstr "Volver"
 msgid "Fechar"
 msgstr "Cerrar"
 
-msgid "GPL v2 or greater"
-msgstr "La GPL v2 o superior"
-
 msgid "15/07/2017"
 msgstr ""
-
-msgid "Baixe vídeos do youtube"
-msgstr "Descarga vídeos de youtube"
 
 msgid "O servidor Apache está instalado."
 msgstr "El servidor Apache está instalado."
@@ -148,7 +146,7 @@ msgstr "Retire el motor de base de datos Mysql."
 
 #, fuzzy
 msgid ""
-"O MariaDB (Mysql) está funcionando no momento, utilize esta opção para "
+"O MariaDB (Mysql) está funcionando no momento. Utilize esta opção para "
 "fechar o servidor."
 msgstr ""
 "Mysql se está ejecutando en ese momento, el uso de esta opción para activar "
@@ -361,6 +359,12 @@ msgstr "Espere a que la instalación del servidor Mysql."
 msgid "Aguarde, instalando o Phpmyadmin."
 msgstr "Espere a que la instalación del Phpmyadmin."
 
+msgid "https://github.com/biglinux/bigapache"
+msgstr ""
+
+msgid "https://www.biglinux.com.br"
+msgstr ""
+
 #, fuzzy
 msgid ""
 "Escolha uma senha para o usuário admin do MariaDB (Mysql), não utilize aspas "
@@ -372,16 +376,10 @@ msgstr ""
 msgid "Próximo"
 msgstr "El Próximo"
 
-msgid "https://github.com/biglinux/bigapache"
-msgstr ""
-
-msgid "https://www.biglinux.com.br"
-msgstr ""
-
 msgid ""
 "Esse painel de configurações para servidores é feito para auxiliar pessoas\n"
-"que estão estudando sobre criação de sites, ou para servidores domésticos,\n"
-"para o uso de servidores profissionais e empresariais é recomendado uma "
+"que estão estudando sobre criação de sites, ou para servidores domésticos.\n"
+"Para o uso de servidores profissionais e empresariais é recomendado uma "
 "série\n"
 "de configurações extras, tanto de otimização de desempenho quanto de "
 "segurança.\n"
@@ -391,7 +389,7 @@ msgid ""
 "\n"
 "MariaDB e Mysql são compatíveis, portanto, os programas que necessitam\n"
 "de um desses bancos de dados, também funcionam no outro, utilizam os\n"
-"mesmos comandos e etc.\n"
+"mesmos comandos etc.\n"
 "\n"
 "Para facilitar o uso do MariaDB, após a instalação, utilize a opção alterar "
 "a\n"
@@ -409,8 +407,9 @@ msgid ""
 "você desejar."
 msgstr ""
 
-msgid "Web Server"
-msgstr ""
+#, fuzzy
+msgid "Servidor Web"
+msgstr "El Servidor de WEB de Apache"
 
 msgid "Aguarde, desinstalando o servidor Apache."
 msgstr "Por favor espere, mediante la desinstalación del servidor web Apache."
@@ -421,6 +420,9 @@ msgstr "Por favor espere, mediante la desinstalación del servidor de Mysql."
 
 msgid "Aguarde, desinstalando o Phpmyadmin."
 msgstr "Por favor espere, al desinstalar el Phpmyadmin."
+
+#~ msgid "Baixe vídeos do youtube"
+#~ msgstr "Descarga vídeos de youtube"
 
 #~ msgid "25/07/2019"
 #~ msgstr "25/07/2019"
