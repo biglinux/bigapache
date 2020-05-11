@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bigapache\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 05:01-0300\n"
-"PO-Revision-Date: 2019-08-19 05:26-0300\n"
+"POT-Creation-Date: 2020-04-16 00:13-0300\n"
+"PO-Revision-Date: 2020-05-10 00:04-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: es\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.3\n"
 
 msgid "Desenvolvimento WEB"
 msgstr "El desarrollo de la WEB"
@@ -24,12 +24,8 @@ msgstr "El desarrollo de la WEB"
 msgid "Instale servidores e outras facilidades"
 msgstr "Instale los servidores y el resto de instalaciones"
 
-#, fuzzy
-msgid "GPL v2 ou maior"
-msgstr "La GPL v2 o superior"
-
 msgid "Bruno Gonçalves"
-msgstr ""
+msgstr "Bruno Gonçalves"
 
 msgid "Configuração aplicada!"
 msgstr "Configuración de aplicación!"
@@ -40,23 +36,30 @@ msgstr "Volver"
 msgid "Fechar"
 msgstr "Cerrar"
 
+msgid "GPL v2 or greater"
+msgstr "La GPL v2 o superior"
+
 msgid "15/07/2017"
-msgstr ""
+msgstr "15/07/2017"
+
+msgid "Baixe vídeos do youtube"
+msgstr "Descarga vídeos de youtube"
 
 msgid "O servidor Apache está instalado."
 msgstr "El servidor Apache está instalado."
 
 msgid "O servidor Apache não está instalado."
-msgstr "El servidor http Apache no está instalado."
+msgstr "El servidor Apache no está instalado."
 
-#, fuzzy
 msgid "O servidor MariaDB (Mysql) está instalado."
-msgstr "El servidor Mysql está instalado."
+msgstr "El servidor MariaDB (Mysql) está instalado."
 
 msgid ""
 "Lembre que o usuário root pode ser acessado apenas no terminal e utilizando "
 "o usuário root do sistema."
 msgstr ""
+"Lembre que el usuario root puede ser acessado solo por el terminal y "
+"utilizando el usuario root del sistema."
 
 msgid ""
 "Para utilizar sistemas web que precisem conectar no banco de dados, utilize "
@@ -65,28 +68,32 @@ msgid ""
 "você escolher, esse usuário possui todos os poderes administrativos e pode "
 "ser acessado utilizando php."
 msgstr ""
+"Para usar sistemas web que necesitan conectarse a la base de datos, use la "
+"opción \"Administrar MariaDB (Mysql)\" y seleccione la opción para cambiar la "
+"contraseña del usuario administrador. Luego se creará el nombre de usuario "
+"admin con la contraseña que elija, ese usuario tiene poderes administrativos "
+"y se puede acceder mediante php."
 
-#, fuzzy
 msgid "O servidor MariaDB (Mysql) não está instalado."
-msgstr "El servidor Mysql no está instalado."
+msgstr "El servidor MariaDB (Mysql) no está instalado."
 
 msgid "O Phpmyadmin está instalado."
-msgstr "En el Phpmyadmin instalado."
+msgstr "El Phpmyadmin está instalado."
 
 msgid "O Phpmyadmin não está instalado."
-msgstr "En el Phpmyadmin no está instalado."
+msgstr "El Phpmyadmin no está instalado."
 
 msgid "Download concluído"
-msgstr ""
+msgstr "Descarga completa"
 
 msgid "Servidor WEB Apache"
-msgstr "El Servidor de WEB de Apache"
+msgstr "El Servidor de WEB Apache"
 
 msgid "Instalado"
 msgstr "Instalado"
 
 msgid "Desinstala o Apache e o suporte à PHP, Python e Perl."
-msgstr "Desinstala el Apache y el soporte para PHP, ruby, Python y Perl."
+msgstr "Desinstala el Apache y el soporte para PHP, Python y Perl."
 
 msgid "Remover o servidor WEB Apache"
 msgstr "Para quitar el servidor de WEB de Apache"
@@ -115,88 +122,75 @@ msgid "O Apache está sendo iniciado automaticamente ao ligar o computador."
 msgstr "El Apache se inicia automáticamente al encender el equipo."
 
 msgid "Parar de iniciar o Apache ao ligar o computador"
-msgstr "Deja de arrancar el Apache, que al encender el ordenador"
+msgstr "Deja de arrancar el Apache, cuando encienda el ordenador"
 
 msgid "O Apache não está sendo iniciado automaticamente ao ligar o computador."
-msgstr "El Apache, que no se inicia automáticamente al encender el equipo."
+msgstr "El Apache, no se inicia automáticamente al encender el equipo."
 
 msgid "Marcar o Apache para iniciar ao ligar o computador"
-msgstr "Para Marcar el Apache para que inicie al arrancar el sistema"
+msgstr "Marcar el Apache para que inicie al arrancar el sistema"
 
 msgid "Não está instalado"
 msgstr "No se ha instalado"
 
 msgid "Instala o Apache com suporte a PHP, Python e Perl."
-msgstr "Instale el Apache con soporte para PHP, ruby, Python y Perl."
+msgstr "Instale el Apache con soporte para PHP, Python y Perl."
 
 msgid "Instalar o servidor WEB Apache"
 msgstr "Para Instalar el servidor WEB Apache"
 
-#, fuzzy
 msgid "Servidor MariaDB (Mysql)"
-msgstr "El Servidor De Mysql."
+msgstr "El Servidor MariaDB (Mysql)."
 
-#, fuzzy
 msgid "Desinstala o MariaDB (Mysql)."
-msgstr "Desinstalar Mysql."
+msgstr "Desinstala el servidor MariaDB (Mysql)."
 
-#, fuzzy
 msgid "Remover o servidor de banco de dados MariaDB (Mysql)"
-msgstr "Retire el motor de base de datos Mysql."
+msgstr "Quitar el servidor de base de datos MariaDB (Mysql)."
 
-#, fuzzy
 msgid ""
-"O MariaDB (Mysql) está funcionando no momento. Utilize esta opção para "
+"O MariaDB (Mysql) está funcionando no momento, utilize esta opção para "
 "fechar o servidor."
 msgstr ""
-"Mysql se está ejecutando en ese momento, el uso de esta opción para activar "
-"el servidor."
+"El MAriaDB (Mysql) se está ejecutando en ese momento, usa esta opción para cerrar el "
+"servidor."
 
-#, fuzzy
 msgid "Parar o MariaDB (Mysql)"
-msgstr "Dejar que el Mysql."
+msgstr "Parar el MariaDB (Mysql)"
 
-#, fuzzy
 msgid ""
 "O MariaDB (Mysql) não está funcionando no momento, utilize esta opção para "
 "iniciar o servidor."
 msgstr ""
-"Mysql no está funcionando correctamente, puede usar esta opción para que se "
-"inicie el servidor."
+"El MariaDB (Mysql) no está funcionando correctamente, puede usar esta opción para "
+"que se inicie el servidor."
 
-#, fuzzy
 msgid "Iniciar o MariaDB (Mysql)"
-msgstr "Arrancar el Mysql."
+msgstr "Arrancar el MariaDB (Mysql)"
 
-#, fuzzy
 msgid ""
 "O MariaDB (Mysql) está sendo iniciado automaticamente ao ligar o computador."
-msgstr "Mysql se inicie automáticamente al encender el equipo."
+msgstr "El MariaDB (Mysql) se inicia automáticamente al encender el equipo."
 
-#, fuzzy
 msgid "Parar de iniciar o MariaDB (Mysql) ao ligar o computador"
-msgstr "Deja de inicio de Mysql, al encender el ordenador"
+msgstr "Deja de inicio de MariaDB (Mysql), al encender el ordenador"
 
-#, fuzzy
 msgid ""
 "O MariaDB (Mysql) não está sendo iniciado automaticamente ao ligar o "
 "computador."
-msgstr "Mysql no se inicia automáticamente al encender el equipo."
+msgstr "El MariaDB (Mysql) no se inicia automáticamente al encender el equipo."
 
-#, fuzzy
 msgid "Marcar o MariaDB (Mysql) para iniciar ao ligar o computador"
-msgstr "Para Marcar el Mysql para que inicie al arrancar el sistema"
+msgstr "Marcar el MariaDB (Mysql) para que inicie al arrancar el sistema"
 
-#, fuzzy
 msgid "Instala o MariaDB (Mysql)."
-msgstr "Se Instala el Mysql."
+msgstr "Se Instala el MariaDB (Mysql)."
 
-#, fuzzy
 msgid "Instalar o servidor de banco de dados MariaDB (Mysql)"
-msgstr "Para Instalar el servidor de base de datos Mysql."
+msgstr "Para instalar el servidor de base de datos MariaDB (Mysql)"
 
 msgid "Configurações do Apache"
-msgstr "La configuración de Apache."
+msgstr "La configuración de Apache"
 
 msgid ""
 "Configura as permissões da pasta padrão do Apache, /var/www/html, para o "
@@ -217,10 +211,10 @@ msgid ""
 "usuário padrão: www-data"
 msgstr ""
 "Configurar los permisos de la carpeta por defecto de Apache (/var/www/html, "
-"para que el usuario y la fecha de"
+"para el usuario estándar: www-data"
 
 msgid "Alterar as permissões dos arquivos para o usuário padrão."
-msgstr "Cambiar los permisos de los archivos para que el usuario por defecto."
+msgstr "Cambiar los permisos de los archivos para el usuario por defecto."
 
 msgid ""
 "Esta é a pasta padrão do Apache, aonde devem ficar os arquivos do seu site."
@@ -235,11 +229,10 @@ msgid "Pasta que contêm os arquivos de configuração do Apache."
 msgstr "La carpeta que contiene los archivos de configuración de Apache."
 
 msgid "Abrir a pasta de configurações /etc/apache2"
-msgstr "Al Abrir la carpeta de configuración en /etc/apache2"
+msgstr "Abrir la carpeta de configuración en /etc/apache2"
 
-#, fuzzy
 msgid "Gerenciar o MariaDB (Mysql)"
-msgstr "Administrar Mysql."
+msgstr "Administrar MariaDB (Mysql)"
 
 msgid "Desinstala o Phpmyadmin."
 msgstr "Desinstala el Phpmyadmin."
@@ -259,49 +252,46 @@ msgstr "Instalar el Phpmyadmin."
 msgid "Instalar o gerenciador de banco de dados Phpmyadmin"
 msgstr "Para Instalar el administrador de la base de datos con Phpmyadmin"
 
-#, fuzzy
 msgid ""
 "Para instalar o Phpmyadmin, instale primeiro o Apache e o MariaDB (Mysql)."
 msgstr ""
-"Para instalar el Phpmyadmin, primero debe instalar el Apache y el Mysql."
+"Para instalar el Phpmyadmin, primero debe instalar el Apache y el MariaDB (Mysql)."
 
-#, fuzzy
 msgid ""
 "Nesse sistema utilizamos dois administradores no MariaDB (Mysql), o root, "
 "utilizado apenas por linha de comando e o admin, que pode ser utilizado, por "
 "exemplo, no Phpmyadmin."
 msgstr ""
-"En este sistema, utilizamos dos de los administradores en Mysql con el "
+"En este sistema, utilizamos dos de los administradores en MariaDB (Mysql) con el "
 "usuario root, solo desde la línea de comandos, y el administrador, el cual "
 "puede ser utilizado, por ejemplo, en el Phpmyadmin."
 
-#, fuzzy
 msgid "Alterar a senha do usuário admin do MariaDB (Mysql)"
-msgstr "Para cambiar la contraseña del usuario administrador de Mysql."
+msgstr "Para cambiar la contraseña del usuario administrador de MariaDB (Mysql)"
 
 msgid "Instalar ou remover editores de código"
-msgstr "Para Instalar o retirar a los editores de código"
+msgstr "Para Instalar o quitar a los editores de código"
 
 msgid "Desinstala o editor Atom."
-msgstr "Desinstala el editor de un Átomo."
+msgstr "Desinstala el editor Atom."
 
 msgid "Remover o Atom"
-msgstr "Quitar un Átomo de"
+msgstr "Quitar el Atom"
 
 msgid "Instala o editor Atom."
-msgstr "Se Instala el editor de un Átomo."
+msgstr "Se Instala el editor Atom."
 
 msgid "Instalar o Atom"
-msgstr "Para Instalar el Átomo de"
+msgstr "Para Instalar el Atom"
 
 msgid "Desinstala o editor Bluefish."
-msgstr "Desinstala el editor de Bluefish."
+msgstr "Desinstala el editor Bluefish."
 
 msgid "Remover o Bluefish"
 msgstr "Para quitar el Bluefish"
 
 msgid "Instala o editor Bluefish."
-msgstr "Se Instala en el editor de Bluefish."
+msgstr "Se Instala el editor Bluefish."
 
 msgid "Instalar o Bluefish"
 msgstr "Para Instalar el Bluefish"
@@ -313,73 +303,72 @@ msgid "Remover o VSCodium"
 msgstr "Para quitar el VSCodium"
 
 msgid "Instala o editor VSCodium."
-msgstr "Se Instala en el editor de VSCodium."
+msgstr "Se Instala el editor VSCodium."
 
 msgid "Instalar o VSCodium"
 msgstr "Para Instalar el VSCodium"
 
 msgid "Desinstala o editor Visual Studio Code."
-msgstr "Desinstala el editor de Código de Visual Studio."
+msgstr "Desinstala el editor de Visual Studio Code."
 
 msgid "Remover o VSCode"
 msgstr "Para quitar el VSCode"
 
 msgid "Instala o editor Visual Studio Code."
-msgstr "Se Instala en el editor de Código de Visual Studio."
+msgstr "Se Instala el editor Visual Studio Code."
 
 msgid "Instalar o VSCode"
 msgstr "Para Instalar el VSCode"
 
 msgid "Desinstala o editor Sublime Text. (Este programa não é software livre)"
-msgstr "Desinstala el editor Sublime Text. Este programa no es software libre)"
+msgstr ""
+"Desinstala el editor Sublime Text. (Este programa no es software libre)"
 
 msgid "Remover o Sublime Text"
-msgstr "Para quitar el Sublime Text."
+msgstr "Para quitar el Sublime Text"
 
 msgid "Instala o editor Sublime Text. (Este programa não é software livre)"
 msgstr ""
-"Se Instala en el editor Sublime Text. Este programa no es software libre)"
+"Se Instala el editor Sublime Text. (Este programa no es software libre)"
 
 msgid "Instalar o Sublime Text"
-msgstr "Para Instalar Sublime Text."
+msgstr "Para Instalar Sublime Text"
 
 msgid "Dicas de instalação e uso"
-msgstr ""
+msgstr "Consejos de instalación y uso"
 
 msgid "Aguarde, instalando o servidor Apache."
-msgstr "Espere a que la instalación del servidor web Apache."
+msgstr "Espera, instalando el servidor web Apache."
 
 msgid "Aguarde..."
-msgstr "Por favor espere..."
+msgstr "Espera..."
 
-#, fuzzy
 msgid "Aguarde, instalando o servidor MariaDB (Mysql)."
-msgstr "Espere a que la instalación del servidor Mysql."
+msgstr "Espera, instalando el servidor MariaDB (Mysql)."
 
 msgid "Aguarde, instalando o Phpmyadmin."
-msgstr "Espere a que la instalación del Phpmyadmin."
+msgstr "Espera, instalando el Phpmyadmin."
 
-msgid "https://github.com/biglinux/bigapache"
-msgstr ""
-
-msgid "https://www.biglinux.com.br"
-msgstr ""
-
-#, fuzzy
 msgid ""
 "Escolha uma senha para o usuário admin do MariaDB (Mysql), não utilize aspas "
 "na senha:"
 msgstr ""
-"La elección de una contraseña para el usuario administrador de Mysql, por "
-"favor no use comillas de la contraseña:"
+"Elija una contraseña para el usuario administrador de (Mysql), por favor no "
+"use comillas en la contraseña:"
 
 msgid "Próximo"
 msgstr "El Próximo"
 
+msgid "https://github.com/biglinux/bigapache"
+msgstr "https://github.com/biglinux/bigapache"
+
+msgid "https://www.biglinux.com.br"
+msgstr "https://www.biglinux.com.br"
+
 msgid ""
 "Esse painel de configurações para servidores é feito para auxiliar pessoas\n"
-"que estão estudando sobre criação de sites, ou para servidores domésticos.\n"
-"Para o uso de servidores profissionais e empresariais é recomendado uma "
+"que estão estudando sobre criação de sites, ou para servidores domésticos,\n"
+"para o uso de servidores profissionais e empresariais é recomendado uma "
 "série\n"
 "de configurações extras, tanto de otimização de desempenho quanto de "
 "segurança.\n"
@@ -389,7 +378,7 @@ msgid ""
 "\n"
 "MariaDB e Mysql são compatíveis, portanto, os programas que necessitam\n"
 "de um desses bancos de dados, também funcionam no outro, utilizam os\n"
-"mesmos comandos etc.\n"
+"mesmos comandos e etc.\n"
 "\n"
 "Para facilitar o uso do MariaDB, após a instalação, utilize a opção alterar "
 "a\n"
@@ -406,23 +395,46 @@ msgid ""
 "acessar a pasta /var/www/html e criar os serviços web ou sites que\n"
 "você desejar."
 msgstr ""
+"Este panel de configuración del servidor está diseñado para ayudar a las "
+"personas\n"
+"que estudian la creación de sitios web o para servidores domésticos, \n"
+"para el uso de servidores profesionales y comerciales, una serie\n"
+"de configuraciones adicionales, tanto para la optimización del rendimiento "
+"como para la seguridad.\n"
+"Al instalar el servidor Apache, el PHP se instalará y configurará "
+"automáticamente.\n"
+"\n"
+"MariaDB y Mysql son compatibles, por lo tanto, los programas que necesitan\n"
+"una de estas bases de datos, también funciona en la otra, usa el\n"
+"mismos comandos y etc.\n"
+"Para facilitar el uso de MariaDB, después de la instalación, use la opción "
+"para cambiar el\n"
+"Contraseña de usuario administrador de MariaDB.\n"
+"En algunas guías que se encuentran en Internet, informan sobre el uso del "
+"usuario\n"
+"root para gestionar MariaDB o Mysql, en nuestro sistema el usuario\n"
+"admin tiene los mismos usos y recursos que el usuario root.\n"
+"\n"
+"También instale Phpmyadmin para facilitar la creación y el mantenimiento de\n"
+"su base de datos del servidor Mariadb.\n"
+"\n"
+"Para concluir, le recomiendo que cambie los permisos de archivo\n"
+"para el usuario actual, en la configuración de Apache, eso es suficiente\n"
+"acceda a la carpeta /var/www/html y cree los servicios web o sitios web "
+"que\n"
+"usted desea."
 
-#, fuzzy
-msgid "Servidor Web"
-msgstr "El Servidor de WEB de Apache"
+msgid "Web Server"
+msgstr "Servidor Web"
 
 msgid "Aguarde, desinstalando o servidor Apache."
-msgstr "Por favor espere, mediante la desinstalación del servidor web Apache."
+msgstr "Espera, desinstalando el servidor web Apache."
 
-#, fuzzy
 msgid "Aguarde, desinstalando o servidor MariaDB (Mysql)."
-msgstr "Por favor espere, mediante la desinstalación del servidor de Mysql."
+msgstr "Espera, desinstalando el servidor MariaDB (Mysql)."
 
 msgid "Aguarde, desinstalando o Phpmyadmin."
-msgstr "Por favor espere, al desinstalar el Phpmyadmin."
-
-#~ msgid "Baixe vídeos do youtube"
-#~ msgstr "Descarga vídeos de youtube"
+msgstr "Espere, desinstalando el Phpmyadmin."
 
 #~ msgid "25/07/2019"
 #~ msgstr "25/07/2019"
