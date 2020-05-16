@@ -1,12 +1,12 @@
-422cede36784cf895e58a239f099027b  DEBIAN/es.po
+1bf6e78aaab2e7411a4144e7d10cc3d3  DEBIAN/control
+8453b92e62d82bed33ae2cb18da66892  DEBIAN/en.mo
+1265e243dae29e791e97e56644c0e9b5  DEBIAN/en.po
+e2e4e69688415cb9c373cf78f2bebf82  DEBIAN/es.po
 4edec0c5a7f36ef8cb6def0193915f0f  DEBIAN/languages
 d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
-1472d60b553d6bec4bbf31e796c7ab93  DEBIAN/pt.po
-c207ddbb1253543cfbef031911c4e8e8  DEBIAN/control
-bca16e295782e85b8b12b1f04fdfcc80  DEBIAN/en.po
-8453b92e62d82bed33ae2cb18da66892  DEBIAN/en.mo
-1284e23364c54ea82945cb4f00d3470a  DEBIAN/bigapache.pot
-72510fdce5dca6d9bdc478ba0e7ae589  usr/bin/bigapache
+1053e9b611e7bfc15b181710aee3d403  DEBIAN/pt.po
+931f2ad8d150690aaa44a494c49a04ff  DEBIAN/bigapache.pot
+e4ff703b9292068795db7b54d2d4ee8f  usr/bin/bigapache
 564b32968778f91f8610108520bd3908  usr/bin/pzp
 8edbd1f4b869e3e0fd268285849fe507  usr/share/applications/bigapache.desktop
 3ba76a6d012bb00d01c913998eeba97f  usr/share/bigbashview/bcc/apps/apache/apache-config.run
@@ -54,5 +54,5 @@ d026115847cce97c7a763dd87cce6883  usr/share/bigbashview/bcc/apps/apache/remove-p
 82327e036e3ab1aa4996188655dd0834  usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh
 467044c70367785bd95fdf452d2eb8b9  usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh.htm
 8453b92e62d82bed33ae2cb18da66892  usr/share/locale/en/LC_MESSAGES/bigapache.mo
-765c9703f3d3590134fe5faace853987  usr/share/locale/es/LC_MESSAGES/bigapache.mo
+e7c69cb14f654f0fb3cc1d3490728663  usr/share/locale/es/LC_MESSAGES/bigapache.mo
 0bbaf5e91add9c87161023c98c0e3c4f  usr/share/locale/pt/LC_MESSAGES/bigapache.mo

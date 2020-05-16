@@ -1,10 +1,10 @@
 Package: bigapache
-Version: 1.0.1-1big2
+Version: 1.0.3-1big1
 Depends: synaptic, bigbashview
 Architecture: all
 Maintainer: Bruno Goncalves <www.biglinux.com.br>
 Section: admin
 Priority: optional
-Installed-Size:336
+Installed-Size:340
 Description: Manage apache web server and MariaDB (Mysql)
 
