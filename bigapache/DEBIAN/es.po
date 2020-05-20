@@ -24,7 +24,6 @@ msgstr "El desarrollo de la WEB"
 msgid "Instale servidores e outras facilidades"
 msgstr "Instale los servidores y el resto de instalaciones"
 
-#, fuzzy
 msgid "GPL v2 ou maior"
 msgstr "La GPL v2 o superior"
 
@@ -146,12 +145,11 @@ msgstr "Desinstala el servidor MariaDB (Mysql)."
 msgid "Remover o servidor de banco de dados MariaDB (Mysql)"
 msgstr "Quitar el servidor de base de datos MariaDB (Mysql)."
 
-#, fuzzy
 msgid ""
 "O MariaDB (Mysql) está funcionando no momento. Utilize esta opção para "
 "fechar o servidor."
 msgstr ""
-"El MAriaDB (Mysql) se está ejecutando en ese momento, usa esta opción para "
+"El MariaDB (Mysql) se está ejecutando en ese momento, usa esta opción para "
 "cerrar el servidor."
 
 msgid "Parar o MariaDB (Mysql)"
@@ -366,7 +364,6 @@ msgstr ""
 msgid "Próximo"
 msgstr "El Próximo"
 
-#, fuzzy
 msgid ""
 "Esse painel de configurações para servidores é feito para auxiliar pessoas\n"
 "que estão estudando sobre criação de sites, ou para servidores domésticos.\n"
@@ -425,7 +422,6 @@ msgstr ""
 "acceda a la carpeta /var/www/html y cree los servicios web o sitios web que\n"
 "usted desea."
 
-#, fuzzy
 msgid "Servidor Web"
 msgstr "El Servidor de WEB Apache"
 
