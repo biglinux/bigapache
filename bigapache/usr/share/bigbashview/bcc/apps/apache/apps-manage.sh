@@ -38,7 +38,7 @@ fi
 if [ "$1" = "install-codium" ]; then
     wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | apt-key add -
 
-    echo 'deb https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/repos/debs/ vscodium main' | tee /etc/apt/sources.list.d/vscodium.list
+    echo 'deb https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs/ vscodium main' | tee /etc/apt/sources.list.d/vscodium.list
 
     synaptic --parent-window-id "$windowID" --non-interactive -o Synaptic::closeZvt=true --hide-main-window --update-at-startup
     
