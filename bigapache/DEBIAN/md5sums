@@ -1,4 +1,3 @@
-1bf6e78aaab2e7411a4144e7d10cc3d3  DEBIAN/control
 8453b92e62d82bed33ae2cb18da66892  DEBIAN/en.mo
 1265e243dae29e791e97e56644c0e9b5  DEBIAN/en.po
 e2e4e69688415cb9c373cf78f2bebf82  DEBIAN/es.po
@@ -6,6 +5,7 @@ e2e4e69688415cb9c373cf78f2bebf82  DEBIAN/es.po
 d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
 1053e9b611e7bfc15b181710aee3d403  DEBIAN/pt.po
 931f2ad8d150690aaa44a494c49a04ff  DEBIAN/bigapache.pot
+f9db130b24e793527964369eb10dc903  DEBIAN/control
 e4ff703b9292068795db7b54d2d4ee8f  usr/bin/bigapache
 564b32968778f91f8610108520bd3908  usr/bin/pzp
 8edbd1f4b869e3e0fd268285849fe507  usr/share/applications/bigapache.desktop
@@ -15,7 +15,6 @@ cc184a690f07823d7a738e4a5dc0cdc4  usr/share/bigbashview/bcc/apps/apache/apache-p
 3b20c2bb3b37647bd7ded9299c45fb29  usr/share/bigbashview/bcc/apps/apache/apache-permission-default.sh.htm
 552b3c541259d3564645ca265cac05e9  usr/share/bigbashview/bcc/apps/apache/apache-permission-user.sh
 9948ab24326aa0e9ed7caacf270eac7b  usr/share/bigbashview/bcc/apps/apache/apache-permission-user.sh.htm
-b108b3ad0031f9571b1cd90b20ea97a9  usr/share/bigbashview/bcc/apps/apache/apps-manage.sh
 3dadb624ccb684da14fe406062782dcd  usr/share/bigbashview/bcc/apps/apache/apps-manage.sh.htm
 0d1e04ca76468d0ef62dfa1ff1403592  usr/share/bigbashview/bcc/apps/apache/bigapache.png
 4f7d55e235f4a7b6438ac1f4dca16bd3  usr/share/bigbashview/bcc/apps/apache/cancel.png
@@ -53,6 +52,7 @@ d026115847cce97c7a763dd87cce6883  usr/share/bigbashview/bcc/apps/apache/remove-p
 971b48e585e224e792d1b0d8638b485f  usr/share/bigbashview/bcc/apps/apache/run-terminal.sh
 82327e036e3ab1aa4996188655dd0834  usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh
 467044c70367785bd95fdf452d2eb8b9  usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh.htm
+f727d552280b9f1ca399db2a5cb14709  usr/share/bigbashview/bcc/apps/apache/apps-manage.sh
 8453b92e62d82bed33ae2cb18da66892  usr/share/locale/en/LC_MESSAGES/bigapache.mo
 e7c69cb14f654f0fb3cc1d3490728663  usr/share/locale/es/LC_MESSAGES/bigapache.mo
 0bbaf5e91add9c87161023c98c0e3c4f  usr/share/locale/pt/LC_MESSAGES/bigapache.mo
