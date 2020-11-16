@@ -32,37 +32,37 @@ bcc_header
 # Start Content
 
 
-if [ "$p_enable_apache" = "1" ]; then
+if [ "$enable_apache" = "1" ]; then
     bigsudo /usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh enable-apache
 fi
 
-if [ "$p_disable_apache" = "1" ]; then
+if [ "$disable_apache" = "1" ]; then
     bigsudo /usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh disable-apache
 fi
 
-if [ "$p_start_apache" = "1" ]; then
+if [ "$start_apache" = "1" ]; then
     bigsudo /usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh start-apache
 fi
 
-if [ "$p_stop_apache" = "1" ]; then
+if [ "$stoapache" = "1" ]; then
     bigsudo /usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh stop-apache
 fi
 
 
 
-if [ "$p_enable_mysql" = "1" ]; then
+if [ "$enable_mysql" = "1" ]; then
     bigsudo /usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh enable-mysql
 fi
 
-if [ "$p_disable_mysql" = "1" ]; then
+if [ "$disable_mysql" = "1" ]; then
     bigsudo /usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh disable-mysql
 fi
 
-if [ "$p_start_mysql" = "1" ]; then
+if [ "$start_mysql" = "1" ]; then
     bigsudo /usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh start-mysql
 fi
 
-if [ "$p_stop_mysql" = "1" ]; then
+if [ "$stomysql" = "1" ]; then
     bigsudo /usr/share/bigbashview/bcc/apps/apache/systemd-manage.sh stop-mysql
 fi
 

@@ -79,7 +79,7 @@ if [ -e "/usr/sbin/apache2" ]; then
 
 
   if [ "$(ps -e | grep /usr/sbin/apach)" != "" ]; then
-    echo '<a href="systemd-manage.sh.htm?stop_apache=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
+    echo '<a href="systemd-manage.sh.htm?stoapache=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
     echo $"O Apache está funcionando no momento, utilize esta opção para fechar o servidor."
     echo '">' $"Parar o Apache" '</label></a><p>'
   else
@@ -115,7 +115,7 @@ if [ -e "/usr/sbin/mysqld" ]; then
 
 
   if [ "$(ps -e | grep mysqld)" != "" ]; then
-    echo '<a href="systemd-manage.sh.htm?stop_mysql=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
+    echo '<a href="systemd-manage.sh.htm?stomysql=1" class="blue-text text-darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="'
     echo $"O MariaDB (Mysql) está funcionando no momento. Utilize esta opção para fechar o servidor."
     echo '">' $"Parar o MariaDB (Mysql)" '</label></a><p>'
   else
